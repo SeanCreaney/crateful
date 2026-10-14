@@ -147,7 +147,7 @@ Crateful is an independent project and isn't affiliated with or endorsed by Alph
 ## Support
 
 > [!TIP]
-> If Crateful saves you hours, you can [buy me a coffee](https://buymeacoffee.com/YOUR-NAME).
+> If Crateful saves you hours, you can [buy me a coffee](https://buymeacoffee.com/seancreaney).
 -->
 
 <div align="center">
