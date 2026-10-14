@@ -55,7 +55,7 @@ When it's out, you'll download it from **Releases**, run it with one command, an
 | Enter | Trash |
 | M | Mixed (part of a mix) |
 | ↓ | Pending Decision: revisited at the end |
-| 1–9, 0 | your playlists and combos (add them with **+ Add playlist** or the + key) |
+| 1–9, 0 | your playlists and combos (add them with **+ Add Playlist** or the + key) |
 | ↑ | back to the last track |
 | Space | play / pause |
 | ← → | jump 15 s (Shift: 60 s), or click the waveform |
@@ -108,6 +108,21 @@ Command-line options (`--root`, `--port`, `--start`) override the file for that 
 
 **Does it change my music or my rekordbox library?**<br>
 *No. Audio files are only read. Crateful writes playlists into its own folder (`~/Music/crateful`), and nothing reaches rekordbox until you import a playlist yourself.*
+
+**Can a track go into more than one playlist, say House and Percussive?**<br>
+*Yes. Add House and Percussive as playlists, then add one more key and tick both of them: that makes a combo. One press of it (say 3 = House + Percussive) puts the track in both and moves on. In Crate Rate, tags work the same way: switch on as many as you like, then Enter.*
+
+**What happens when I import into rekordbox? Are my old playlists affected?**<br>
+*Each `.m3u8` in `FOR IMPORTING/` comes in as a new playlist. Your existing playlists aren't touched, and tracks aren't duplicated: rekordbox matches them to the tracks already in your collection. If a playlist with the same name already exists, you'll get a second one beside it, so delete or rename the old one if the new one replaces it.*
+
+**My music is organised in folders, with matching folders in rekordbox. Does Crateful change that?**<br>
+*No. Crateful never moves, renames or copies your music. The playlists it makes just point to the files where they already are, so your folders on disk stay exactly as they are. In rekordbox, drag the imported playlists into whichever playlist folder you like.*
+
+**Do I need rekordbox?**<br>
+*Not for Crate Sort or Crate Rate: they work with any `.m3u8` playlist, whichever app made it. Crate Split needs rekordbox, because it reads rekordbox's `.txt` export (that's where the BPMs come from).*
+
+**My music lives on an external drive. Does that work?**<br>
+*Yes. Crateful plays each track from wherever the playlist says it is, external drives included. Just have the drive plugged in while you sort. Crateful's own sessions are saved on your Mac in `~/Music/crateful`.*
 
 **Is my library uploaded anywhere?**<br>
 *No. It runs only on your machine (`127.0.0.1`), sends nothing anywhere, and only its own page can talk to it.*
