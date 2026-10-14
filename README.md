@@ -16,15 +16,10 @@ Listen to a track, press one key, move on. Sort, split by BPM, rate, and see the
 
 ### Get started
 
-1. Download this repo (**Code → Download ZIP**, then unzip it) or clone it. Nothing to install: it only needs Python 3.10+, which macOS can install for you the first time you run `python3`.
-   Keep the folder together: `crateful.py` needs the `crateful/` and `web/` folders next to it.
-2. Open Terminal in that folder, and run:
-   ```
-   python3 crateful.py
-   ```
-3. Crateful opens in your browser. Use **Safari**: it plays FLAC and AIFF.
+> [!IMPORTANT]
+> **Coming soon.** Crateful isn't available to download yet. Watch or star this repo to hear when the first release is out.
 
-Stop it with **Ctrl+C**. Everything is saved as you go.
+When it's out, you'll download it from **Releases**, run it with one command, and it opens in your browser. Nothing else to install: it only needs Python 3.10+, which macOS can install for you.
 
 > [!NOTE]
 > Built and tested on macOS with rekordbox exports. Sorting and rating use plain `.m3u8` playlists, so other DJ software should work too, but hasn't been tested yet.
@@ -93,7 +88,7 @@ Drag the `.m3u8` files from a session's `FOR IMPORTING/` folder into rekordbox (
 <details>
 <summary>Optional: <code>crateful.config.json</code></summary>
 
-Copy `crateful.config.example.json` to `crateful.config.json` (next to `crateful.py`) and change what you like. It's in `.gitignore`, so it stays on your machine.
+Crateful works out of the box. If you want to change things, an optional `crateful.config.json` file next to the app lets you set:
 
 | Setting | What it does | Default |
 |---|---|---|
@@ -106,32 +101,6 @@ Copy `crateful.config.example.json` to `crateful.config.json` (next to `crateful
 | `hand_seconds_per_track` | Crate Stats: seconds per track doing the same by hand | `18` (30 min per 100) |
 
 Command-line options (`--root`, `--port`, `--start`) override the file for that run.
-
-</details>
-
-## What's in the folder
-
-<details>
-<summary>For anyone reading or changing the code</summary>
-
-```
-crateful.py            start here: python3 crateful.py
-crateful/              the app (Python, standard library only)
-  cli.py               start-up and the terminal commands (new, start, list)
-  server.py            local web server: serves web/ and the page's API
-  config.py            settings and fixed folder/playlist names
-  state.py             what the running app is working on
-  files.py             reading/writing .m3u8, rekordbox .txt/.xml and JSON
-  sessions.py          session folders: listing, naming, READMEs
-  store.py             one open session: tracks, pads, progress
-  sort.py              Crate Sort's Finish step (FOR IMPORTING)
-  split.py             Crate Split
-  rate.py              Crate Rate settings and track context
-  stats.py             Crate Stats
-web/                   the page: index.html, app.css, app.js
-```
-
-The server only listens on `127.0.0.1` and only answers Crateful's own page. Changes in `web/` show up when you refresh the browser; changes in `crateful/` need a restart (Ctrl+C, then `python3 crateful.py`).
 
 </details>
 
@@ -157,7 +126,7 @@ The server only listens on `127.0.0.1` and only answers Crateful's own page. Cha
 
 ## Disclaimer
 
-Crateful is an independent project and isn't affiliated with or endorsed by AlphaTheta or Pioneer DJ. rekordbox is a trademark of AlphaTheta Corporation. Provided as is, without warranty. Only run copies of Crateful from this repository.
+Crateful is an independent project and isn't affiliated with or endorsed by AlphaTheta or Pioneer DJ. rekordbox is a trademark of AlphaTheta Corporation. Provided as is, without warranty. Only download Crateful from this repository's Releases.
 
 <!--
 ## Support
