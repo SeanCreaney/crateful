@@ -5,10 +5,12 @@
 **Simply sort your exported rekordbox.m3u8/.txt files.**<br>
 Listen to a track, press one key, move on. Sort, split by BPM, rate, and see the hours you've saved.
 
-![macOS](https://img.shields.io/badge/macOS-tested-000000?logo=apple&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![macOS app](https://img.shields.io/badge/macOS-app-000000?logo=apple&logoColor=white)
+![Apple Silicon and Intel](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-555555)
 ![Runs locally](https://img.shields.io/badge/runs-locally-3ad0bd)
-![Dependencies](https://img.shields.io/badge/dependencies-none-ffb020)
+![Free](https://img.shields.io/badge/price-free-ffb020)
+
+**[Download Crateful for Mac](https://github.com/SeanCreaney/crateful-readme/releases/latest)**
 
 ![Crate Sort](docs/screenshots/crate-sort.png)
 
@@ -16,10 +18,12 @@ Listen to a track, press one key, move on. Sort, split by BPM, rate, and see the
 
 ### Get started
 
-> [!IMPORTANT]
-> **Coming soon.** Crateful isn't available to download yet. Watch or star this repo to hear when the first release is out.
+1. Download **Crateful-mac.zip** from the [latest release](https://github.com/SeanCreaney/crateful-readme/releases/latest) and unzip it.
+2. Drag **Crateful** into your **Applications** folder.
+3. Open it. The first time, macOS says it can't check the app (it isn't from the App Store). Go to **System Settings → Privacy & Security**, scroll down, click **Open Anyway** and confirm. You only do this once.
+4. Drop a rekordbox `.m3u8` export onto Crate Sort and start sorting. Everything saves as you go.
 
-When it's out, you'll download it from **Releases**, run it with one command, and it opens in your browser. Nothing else to install: it only needs Python 3.10+, which macOS can install for you.
+Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 
 > [!NOTE]
 > Built and tested on macOS with rekordbox exports. Sorting and rating use plain `.m3u8` playlists, so other DJ software should work too, but hasn't been tested yet.
@@ -88,19 +92,15 @@ Drag the `.m3u8` files from a session's `FOR IMPORTING/` folder into rekordbox (
 <details>
 <summary>Optional: <code>crateful.config.json</code></summary>
 
-Crateful works out of the box. If you want to change things, an optional `crateful.config.json` file next to the app lets you set:
+Crateful works out of the box. If you want to change things, create `crateful.config.json` in `~/Library/Application Support/Crateful/` (Finder: **Go → Go to Folder…**) and restart Crateful. It can set:
 
 | Setting | What it does | Default |
 |---|---|---|
 | `music_folder` | where sessions, splits and ratings are saved | `~/Music/crateful` |
-| `port` | the page opens at `http://127.0.0.1:<port>/` | `8765` |
-| `open_browser` | open the page in your browser on start | `true` |
 | `start_at` | where each track starts playing (0 = top, 0.3 = 30% in) | `0` |
 | `default_playlist` | name for a session's key-1 playlist when none is set | `Songs to Keep` |
 | `rate_tags` | Crate Rate tag keys to start with (6–9, 0), each with a name, note and colour | none |
 | `hand_seconds_per_track` | Crate Stats: seconds per track doing the same by hand | `18` (30 min per 100) |
-
-Command-line options (`--root`, `--port`, `--start`) override the file for that run.
 
 </details>
 
@@ -125,16 +125,19 @@ Command-line options (`--root`, `--port`, `--start`) override the file for that 
 *Yes. Crateful plays each track from wherever the playlist says it is, external drives included. Just have the drive plugged in while you sort. Crateful's own sessions are saved on your Mac in `~/Music/crateful`.*
 
 **Is my library uploaded anywhere?**<br>
-*No. It runs only on your machine (`127.0.0.1`), sends nothing anywhere, and only its own page can talk to it.*
+*No. Crateful runs entirely on your Mac, sends nothing anywhere and doesn't open any network connection.*
 
 **Do I need anything installed?**<br>
-*Just Python 3.10 or newer, which most Macs already have. There are no packages to install.*
+*No. Crateful is a normal Mac app: download, drag to Applications, open.*
 
-**Why Safari?**<br>
-*It plays FLAC and AIFF. Chrome doesn't play AIFF.*
+**Which audio formats play?**<br>
+*MP3, WAV, AIFF, FLAC and M4A/AAC.*
+
+**Why does macOS warn me the first time I open it?**<br>
+*Crateful is free and isn't sold through Apple, so it isn't signed with a paid Apple developer account. Use **Open Anyway** (see Get started) once and it opens normally after that. Only download it from this repository's Releases.*
 
 **My drive isn't plugged in. What happens?**<br>
-*Tracks show "File not found". Plug the drive in and reload the page.*
+*Tracks show "File not found". Plug the drive in, go back to the session list and open the session again.*
 
 **Does it work with Serato, Traktor or Engine DJ?**<br>
 *Crate Sort and Crate Rate use plain `.m3u8` playlists, so they should. Crate Split reads rekordbox's `.txt` export specifically. Not tested yet: feedback welcome.*
@@ -143,12 +146,11 @@ Command-line options (`--root`, `--port`, `--start`) override the file for that 
 
 Crateful is an independent project and isn't affiliated with or endorsed by AlphaTheta or Pioneer DJ. rekordbox is a trademark of AlphaTheta Corporation. Provided as is, without warranty. Only download Crateful from this repository's Releases.
 
-<!--
 ## Support
 
-> [!TIP]
-> If Crateful saves you hours, you can [buy me a coffee](https://buymeacoffee.com/seancreaney).
--->
+Crateful is free. If it saves you hours, you can buy me a beer 🍺
+
+<a href="https://buymeacoffee.com/seancreaney"><img alt="Buy me a beer" src="https://img.shields.io/badge/Buy%20me%20a%20beer-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
 
 <div align="center">
 <br>
