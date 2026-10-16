@@ -3,7 +3,8 @@
 # Crateful
 
 **Simply sort your exported rekordbox.m3u8/.txt files.**<br>
-Listen to a track, press one key, move on. Sort, split by BPM, rate, and see the hours you've saved.
+Listen to a track, press one key, move on. One key can drop a track into several playlists at once.<br>
+Sort, split by BPM, rate, clear out duplicates, and see the hours you've saved.
 
 ![macOS app](https://img.shields.io/badge/macOS-app-000000?logo=apple&logoColor=white)
 ![Apple Silicon and Intel](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-555555)
@@ -15,6 +16,12 @@ Listen to a track, press one key, move on. Sort, split by BPM, rate, and see the
 ![Crate Sort](docs/screenshots/crate-sort.png)
 
 </div>
+
+### One key, several playlists
+
+The thing rekordbox can't do: put a track into **Club** *and* **Peak Time** with a single key press. Make a combo once (say **4 = Club + Peak Time**), and every time you press 4 the track lands in both playlists and the next one starts playing. No dragging the same track twice, no Ctrl-clicking playlists. Make as many combos as you like, and Crate Rate tags work the same way.
+
+![One key puts the track into Club and Peak Time](docs/screenshots/crate-sort-combo.gif)
 
 ### Get started
 
@@ -32,20 +39,22 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 
 | | |
 |---|---|
-| **Crate Sort**<br>Drop a `.m3u8` export and give every track one key. Enter for Trash, M for part of a mix, ↓ to decide later, 1–9 and 0 for your playlists. Combos put a track in several playlists at once. **Finish** writes everything into `FOR IMPORTING/`, ready for rekordbox. | ![Crate Sort](docs/screenshots/crate-sort.png) |
+| **Crate Sort**<br>Drop a `.m3u8` export and give every track one key. Enter for Trash, M for part of a mix, ↓ to decide later, 1–9 and 0 for your playlists. **Combos put a track in several playlists with one key** (e.g. 4 = Club + Peak Time). **Finish** writes everything into `FOR IMPORTING/`, ready for rekordbox. | ![Crate Sort](docs/screenshots/crate-sort.png) |
 | **Crate Split**<br>Drop a rekordbox `.txt` export and get one playlist per BPM, e.g. `2026-10 Downloaded Tracks - 120.01-120.99`. Tracks on an exact whole BPM can get their own playlist. Optionally starts a sorting session for each one. | ![Crate Split](docs/screenshots/crate-split.gif) |
 | **Crate Rate**<br>1–5 stars plus your own tags (e.g. *Purple: Euphoric*), then Enter to save and continue. A tempo fader (±6 / 10 / 16 / WIDE) with master tempo lets you hear how a track holds up sped up, and −/+ jumps to the next whole BPM. | ![Crate Rate](docs/screenshots/crate-rate.png) |
-| **Crate Stats**<br>Tracks sorted and rated, your real pace, and the time saved compared with doing it by hand. Every key press is timed, with breaks left out. | ![Crate Stats](docs/screenshots/crate-stats.png) |
+| **Crate Dedupe**<br>Drop rekordbox's collection `.xml` and go through your duplicates one song at a time: every copy side by side with its file type, bitrate, artwork, album, cues, plays and folder, plus its own player so you can hear the difference. The best copy is ticked for you; 1–9 changes what you keep, Enter moves on. It warns you before you lose a playlist, your cues or a Crate Sort playlist. Crateful deletes nothing: the copies to get rid of go into one playlist, `DupedTracksToDelete.m3u8`, to remove in rekordbox. | ![Crate Dedupe](docs/screenshots/crate-dedupe.png) |
+| **Crate Stats**<br>Tracks sorted and rated, duplicates cleared, your real pace, and the time saved compared with doing it by hand. Every key press is timed, with breaks left out. | ![Crate Stats](docs/screenshots/crate-stats.png) |
 
 ## Crateful vs sorting by hand
 
 | | rekordbox by hand | Crateful |
 |---|:---:|:---:|
 | One key per track, no dragging or scrolling | ✗ | ✓ |
-| Add a track to several playlists in one go | ✗ | ✓ |
+| **Add a track to several playlists with one key** (e.g. Club + Peak Time) | ✗ | ✓ |
 | Know exactly where you left off, and how far through you are | ✓ | ✓ |
 | Park unsure tracks and get taken back to them at the end | ✗ | ✓ |
 | Split a dump into one playlist per BPM in one go | ✗ | ✓ |
+| Compare duplicate copies side by side and keep the best one | ✗ | ✓ |
 | See how long it took and the time you saved | ✗ | ✓ |
 | Time per 100 tracks (real sessions) | ~30 min | **~5 min** |
 
@@ -59,7 +68,7 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 | Enter | Trash |
 | M | Mixed (part of a mix) |
 | ↓ | Pending Decision: revisited at the end |
-| 1–9, 0 | your playlists and combos (add them with **+ Add Playlist** or the + key) |
+| 1–9, 0 | your playlists and combos (add them with **+ Add Playlist** or the + key). A combo is one key for several playlists, e.g. 4 = Club + Peak Time |
 | ↑ | back to the last track |
 | Space | play / pause |
 | ← → | jump 15 s (Shift: 60 s), or click the waveform |
@@ -83,9 +92,28 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 
 </details>
 
+<details>
+<summary><b>Crate Dedupe</b></summary>
+
+| Key | Does |
+|---|---|
+| 1–9 | tick / untick Keep on a copy (keep more than one if you like, e.g. the FLAC and one MP3) |
+| Enter | done with this song, next |
+| A | keep all: they aren't duplicates |
+| ↓ | Pending Decision |
+| ↑ | back to the last song (choosing again replaces what you picked) |
+| Space | play / pause |
+| ← → | jump 15 s (Shift: 60 s), or click a waveform |
+| Tab | the next copy at the same point (Shift+Tab: the one before) |
+| Esc | stop for now (the song you were on stays undecided) |
+
+</details>
+
 ## Getting results into rekordbox
 
 Drag the `.m3u8` files from a session's `FOR IMPORTING/` folder into rekordbox (or **File → Import → Import Playlist**). Tracks match your existing collection by file location, so cues, grids and ratings stay intact.
+
+**Duplicates:** import `crate-dedupe/FOR IMPORTING/DupedTracksToDelete.m3u8`, select all its tracks and choose **Remove from Collection**. The copies you kept stay, with their cues and playlists. Don't move or rename files before you've done this (rekordbox matches by location). Removing from the collection doesn't delete the files from your drive.
 
 ## Settings
 
@@ -112,8 +140,8 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 **Does it change my music or my rekordbox library?**<br>
 *No. Audio files are only read. Crateful writes playlists into its own folder (`~/Music/crateful`), and nothing reaches rekordbox until you import a playlist yourself.*
 
-**Can a track go into more than one playlist, say House and Percussive?**<br>
-*Yes. Add House and Percussive as playlists, then add one more key and tick both of them: that makes a combo. One press of it (say 3 = House + Percussive) puts the track in both and moves on. In Crate Rate, tags work the same way: switch on as many as you like, then Enter.*
+**Can a track go into more than one playlist, say Club and Peak Time?**<br>
+*Yes, with one key. Add Club and Peak Time as playlists, then add one more key and tick both of them: that makes a combo. One press of it (say 4 = Club + Peak Time) puts the track in both and moves on. Doing the same in rekordbox means dragging the track into each playlist one by one. In Crate Rate, tags work the same way: switch on as many as you like, then Enter.*
 
 **What happens when I import into rekordbox? Are my old playlists affected?**<br>
 *Each `.m3u8` in `FOR IMPORTING/` comes in as a new playlist. Your existing playlists aren't touched, and tracks aren't duplicated: rekordbox matches them to the tracks already in your collection. If a playlist with the same name already exists, you'll get a second one beside it, so delete or rename the old one if the new one replaces it.*
@@ -122,7 +150,16 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 *No. Crateful never moves, renames or copies your music. The playlists it makes just point to the files where they already are, so your folders on disk stay exactly as they are. In rekordbox, drag the imported playlists into whichever playlist folder you like.*
 
 **Do I need rekordbox?**<br>
-*Not for Crate Sort or Crate Rate: they work with any `.m3u8` playlist, whichever app made it. Crate Split needs rekordbox, because it reads rekordbox's `.txt` export (that's where the BPMs come from).*
+*Not for Crate Sort or Crate Rate: they work with any `.m3u8` playlist, whichever app made it. Crate Split and Crate Dedupe need rekordbox: Split reads rekordbox's `.txt` export (that's where the BPMs come from), Dedupe its collection `.xml`.*
+
+**Does Crate Dedupe delete my duplicates?**<br>
+*No. Crateful never deletes or moves a file. The copies you don't keep go into one playlist, `DupedTracksToDelete.m3u8`, and you remove them in rekordbox yourself (see Getting results into rekordbox). A copy whose file can't be found is never put in it, and a song only goes in once you've kept at least one copy that's actually on your drive.*
+
+**Why does Crate Dedupe need the collection XML?**<br>
+*It's the only export that has everything needed to choose: every track in your collection with its file type, bitrate, length, cues, beat grid, play count and the playlists it's in. In rekordbox: **File → Export Collection in xml format**, then drop the file on Crate Dedupe. Artwork is read from the music files themselves (read only).*
+
+**I've deduped before. What happens when I drop a newer XML?**<br>
+*Crateful remembers what you chose, so songs you've done don't come up again. Copies you've removed in rekordbox are counted as removed, copies still waiting are shown as waiting (not asked again), and only new duplicates come up, including a new copy of a song you've already deduped.*
 
 **My music lives on an external drive. Does that work?**<br>
 *Yes. Crateful plays each track from wherever the playlist says it is, external drives included. Just have the drive plugged in while you sort. Crateful's own sessions are saved on your Mac in `~/Music/crateful`.*
@@ -146,7 +183,7 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 *Tracks show "File not found". Plug the drive in, go back to the session list and open the session again.*
 
 **Does it work with Serato, Traktor or Engine DJ?**<br>
-*Crate Sort and Crate Rate use plain `.m3u8` playlists, so they should. Crate Split reads rekordbox's `.txt` export specifically. Not tested yet: feedback welcome.*
+*Crate Sort and Crate Rate use plain `.m3u8` playlists, so they should. Crate Split and Crate Dedupe read rekordbox's own exports specifically. Not tested yet: feedback welcome.*
 
 ## Disclaimer
 
