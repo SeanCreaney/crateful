@@ -10,7 +10,7 @@ Listen to a track, press one key, move on. Sort, split by BPM, rate, and see the
 ![Runs locally](https://img.shields.io/badge/runs-locally-3ad0bd)
 ![Free](https://img.shields.io/badge/price-free-ffb020)
 
-**[Download Crateful for Mac](https://github.com/SeanCreaney/crateful-readme/releases/latest)**
+**[Download Crateful for Mac](https://github.com/SeanCreaney/crateful/releases/latest)**
 
 ![Crate Sort](docs/screenshots/crate-sort.png)
 
@@ -18,7 +18,7 @@ Listen to a track, press one key, move on. Sort, split by BPM, rate, and see the
 
 ### Get started
 
-1. Download **Crateful-mac.zip** from the [latest release](https://github.com/SeanCreaney/crateful-readme/releases/latest) and unzip it.
+1. Download **Crateful-mac.zip** from the [latest release](https://github.com/SeanCreaney/crateful/releases/latest) and unzip it.
 2. Drag **Crateful** into your **Applications** folder.
 3. Open it. The first time, macOS says it can't check the app (it isn't from the App Store). Go to **System Settings → Privacy & Security**, scroll down, click **Open Anyway** and confirm. You only do this once.
 4. Drop a rekordbox `.m3u8` export onto Crate Sort and start sorting. Everything saves as you go.
@@ -148,7 +148,7 @@ Crateful is an independent project and isn't affiliated with or endorsed by Alph
 
 ## Support
 
-Crateful is free. If it saves you hours, you can buy me a beer 🍺
+Crateful is free. If it saves you hours:
 
 <a href="https://buymeacoffee.com/seancreaney"><img alt="Buy me a beer" src="https://img.shields.io/badge/Buy%20me%20a%20beer-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
 
