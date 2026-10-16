@@ -89,16 +89,19 @@ Drag the `.m3u8` files from a session's `FOR IMPORTING/` folder into rekordbox (
 
 ## Settings
 
-<details>
-<summary>Optional: <code>crateful.config.json</code></summary>
+Open **Crateful → Preferences…** (⌘,) or click the gear next to "Crateful" in the sidebar:
 
-Crateful works out of the box. If you want to change things, create `crateful.config.json` in `~/Library/Application Support/Crateful/` (Finder: **Go → Go to Folder…**) and restart Crateful. It can set:
+- **Music folder:** where your sessions, splits and ratings are saved (`~/Music/crateful` to start with). Pick a new one and choose to move your sessions there or start fresh. Nothing is ever deleted.
+- **Start each track:** from the top, or partway in (say 30%) to skip long intros.
+- **New versions:** Crateful checks GitHub once a day and shows a note in the sidebar when there's an update.
+
+<details>
+<summary>More: <code>crateful.config.json</code></summary>
+
+Preferences are saved in `crateful.config.json` in `~/Library/Application Support/Crateful/` (Finder: **Go → Go to Folder…**). Two more settings can be added there by hand (restart Crateful after):
 
 | Setting | What it does | Default |
 |---|---|---|
-| `music_folder` | where sessions, splits and ratings are saved | `~/Music/crateful` |
-| `start_at` | where each track starts playing (0 = top, 0.3 = 30% in) | `0` |
-| `default_playlist` | name for a session's key-1 playlist when none is set | `Songs to Keep` |
 | `rate_tags` | Crate Rate tag keys to start with (6–9, 0), each with a name, note and colour | none |
 | `hand_seconds_per_track` | Crate Stats: seconds per track doing the same by hand | `18` (30 min per 100) |
 
@@ -125,7 +128,10 @@ Crateful works out of the box. If you want to change things, create `crateful.co
 *Yes. Crateful plays each track from wherever the playlist says it is, external drives included. Just have the drive plugged in while you sort. Crateful's own sessions are saved on your Mac in `~/Music/crateful`.*
 
 **Is my library uploaded anywhere?**<br>
-*No. Crateful runs entirely on your Mac, sends nothing anywhere and doesn't open any network connection.*
+*No. Crateful runs entirely on your Mac and never sends anything about your library. The only thing it does online is ask GitHub once a day whether there's a new version (you can turn that off in Preferences).*
+
+**How do I update?**<br>
+*When there's a new version, a note appears in the sidebar (or use **Crateful → Check for Updates…**). Download it, and drag the new Crateful into Applications to replace the old one. Your sessions aren't touched: they live in your music folder, not in the app.*
 
 **Do I need anything installed?**<br>
 *No. Crateful is a normal Mac app: download, drag to Applications, open.*
