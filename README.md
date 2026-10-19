@@ -90,6 +90,8 @@ T, M and ↓ only work while no playlist is switched on. Going back to a track (
 | M | Mixed (part of a mix) |
 | ↓ | Pending Decision: revisited at the end |
 
+**With a master playlist** (either mode): **Enter** keeps a track in the master playlist only, and **T** is Trash. In Manual, Enter with playlist keys picked still confirms them.
+
 **Both**
 
 | Key | Does |
@@ -170,7 +172,7 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 *Yes. In **Manual**, press 1 and 3, then Enter: the track goes into both. In **Quick** (the default), make a combo once (add one more key and tick Club and Peak Time), and one press of it (say 4) puts the track in both and moves on. A session with a combo that has tracks in it stays in Quick. Doing the same in rekordbox means dragging the track into each playlist one by one.*
 
 **Is there one playlist with everything I've kept?**<br>
-*Yes: click **+ Master playlist** next to the Quick / Manual switch and give it a name. Every track you put into any of your playlists also goes into it; Trash, Mixed and Pending never do, and a track you change to one of those comes back out. Once it has tracks, it stays on for that session and keeps its name. Crateful also combines each playlist across all your sessions in `crate-sort/_all-sessions/`, so `_all-sessions/<name>.m3u8` holds every kept track from every session.*
+*Yes: click **+ Master playlist** next to the Quick / Manual switch and give it a name. Every track you put into any of your playlists also goes into it; Trash, Mixed and Pending never do, and a track you change to one of those comes back out. Press **Enter** to keep a track in it only (no other playlist); **T** is Trash while it's on. Once it has tracks, it stays on for that session and keeps its name. Crateful also combines each playlist across all your sessions in `crate-sort/_all-sessions/`, so `_all-sessions/<name>.m3u8` holds every kept track from every session.*
 
 **Can I change, rename or remove a playlist key?**<br>
 *You can move a playlist to another free key any time (⋯ on its key), and combos that use it follow. While nothing has been sorted into it, you can also rename or remove it. Once it has tracks, its name stays and it can't be removed, so the playlist file (and what you've imported into rekordbox) always matches and nothing you've sorted goes missing. Don't rename Crateful's `.m3u8` files in Finder: Crateful rewrites each playlist from your decisions as you sort, so a file renamed inside a playlist's folder is replaced. Copy a playlist somewhere else if you want to keep a snapshot.*
