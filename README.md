@@ -117,7 +117,7 @@ Drag the `.m3u8` files from a session's `FOR IMPORTING/` folder into rekordbox (
 
 ## Settings
 
-Open **Crateful → Preferences…** (⌘,) or click the gear next to "Crateful" in the sidebar:
+Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 
 - **Music folder:** where your sessions, splits and ratings are saved (`~/Music/crateful` to start with). Pick a new one and choose to move your sessions there or start fresh. Nothing is ever deleted.
 - **Start each track:** from the top, or partway in (say 30%) to skip long intros.
