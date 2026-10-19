@@ -43,11 +43,11 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 | **Crate Split**<br>Drop a rekordbox `.txt` export and get one playlist per BPM, e.g. `2026-10 Downloaded Tracks - 120.01-120.99`. Tracks on an exact whole BPM can get their own playlist. Optionally starts a sorting session for each one. | ![Crate Split](docs/screenshots/crate-split.gif) |
 | **Crate Rate**<br>1–5 stars plus your own tags (e.g. *Purple: Euphoric*), then Enter to save and continue. A tempo fader (±6 / 10 / 16 / WIDE) with master tempo lets you hear how a track holds up sped up, and −/+ jumps to the next whole BPM. | ![Crate Rate](docs/screenshots/crate-rate.png) |
 | **Crate Dedupe**<br>Drop rekordbox's collection `.xml` and go through your duplicates one song at a time: every copy side by side with its file type, bitrate, artwork, album, cues, plays and folder, plus its own player so you can hear the difference. The best copy is ticked for you; 1–9 changes what you keep, Enter moves on. It warns you before you lose a playlist, your cues or a Crate Sort playlist. Crateful deletes nothing: the copies to get rid of go into one playlist, `DupedTracksToDelete.m3u8`, to remove in rekordbox. | ![Crate Dedupe](docs/screenshots/crate-dedupe.png) |
-| **Crate Stats**<br>Tracks sorted and rated, duplicates cleared, your real pace, and the time saved compared with doing it by hand. Every key press is timed, with breaks left out. | ![Crate Stats](docs/screenshots/crate-stats.png) |
+| **Crate Stats**<br>Tracks sorted and rated, duplicates cleared, your real pace, and the time saved compared with doing the same in rekordbox. Every key press is timed, with breaks left out. Time saved counts finished sessions; ones you're part way through are marked in progress. | ![Crate Stats](docs/screenshots/crate-stats.png) |
 
-## Crateful vs sorting by hand
+## Crateful vs sorting in rekordbox
 
-| | rekordbox by hand | Crateful |
+| | rekordbox | Crateful |
 |---|:---:|:---:|
 | One key per track, no dragging or scrolling | ✗ | ✓ |
 | **Add a track to several playlists with one key** (e.g. Club + Peak Time) | ✗ | ✓ |
@@ -131,7 +131,7 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 | Setting | What it does | Default |
 |---|---|---|
 | `rate_tags` | Crate Rate tag keys to start with (6–9, 0), each with a name, note and colour | none |
-| `hand_seconds_per_track` | Crate Stats: seconds per track doing the same by hand | `18` (30 min per 100) |
+| `hand_seconds_per_track` | Crate Stats: seconds per track doing the same in rekordbox | `18` (30 min per 100) |
 
 </details>
 
