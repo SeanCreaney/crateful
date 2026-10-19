@@ -21,8 +21,8 @@ Sort, split by BPM, rate, clear out duplicates, and see the hours you've saved.
 
 The thing rekordbox can't do quickly: put a track into **Club** *and* **Peak Time** without dragging it twice. Crate Sort has two ways, and you can switch between them (the **Quick / Manual** switch next to Playlists):
 
-- **Manual** (the default): press **1** and **3**, they light up, press **Enter**. Press a key again to take it off. Any mix of playlists, no setting up.
-- **Quick**: one key per track and straight on to the next. Make a combo once (say **4 = Club + Peak Time**) and every press of 4 puts the track in both.
+- **Quick** (the default): one key per track and straight on to the next. Make a combo once (say **4 = Club + Peak Time**) and every press of 4 puts the track in both.
+- **Manual**: press **1** and **3**, they light up, press **Enter**. Press a key again to take it off. Any mix of playlists, no setting up.
 
 Add a **master playlist** and every track you keep also goes into it automatically, so you end up with one list of everything you kept. Crate Rate tags work the Manual way: switch on as many as you like, then Enter.
 
@@ -69,7 +69,7 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 <details>
 <summary><b>Crate Sort</b></summary>
 
-**Manual** (the default)
+**Manual**
 
 | Key | Does |
 |---|---|
@@ -81,7 +81,7 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 
 T, M and ↓ only work while no playlist is switched on. Going back to a track (↑) keeps you on it until you press Enter.
 
-**Quick**
+**Quick** (the default)
 
 | Key | Does |
 |---|---|
@@ -147,7 +147,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 
 - **Music folder:** where your sessions, splits and ratings are saved (`~/Music/crateful` to start with). Pick a new one and choose to move your sessions there or start fresh. Nothing is ever deleted.
 - **Start each track:** from the top, or partway in (say 30%) to skip long intros.
-- **New versions:** Crateful checks GitHub once a day and shows a note in the sidebar when there's an update.
+- **New versions:** Crateful checks GitHub each time it opens and shows a note in the sidebar when there's an update.
 
 <details>
 <summary>More: <code>crateful.config.json</code></summary>
@@ -167,7 +167,7 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 *No. Audio files are only read. Crateful writes playlists into its own folder (`~/Music/crateful`), and nothing reaches rekordbox until you import a playlist yourself.*
 
 **Can a track go into more than one playlist, say Club and Peak Time?**<br>
-*Yes. In **Manual** (the default), press 1 and 3, then Enter: the track goes into both. In **Quick**, make a combo once (add one more key and tick Club and Peak Time), and one press of it (say 4) puts the track in both and moves on. A session with a combo that has tracks in it stays in Quick. Doing the same in rekordbox means dragging the track into each playlist one by one.*
+*Yes. In **Manual**, press 1 and 3, then Enter: the track goes into both. In **Quick** (the default), make a combo once (add one more key and tick Club and Peak Time), and one press of it (say 4) puts the track in both and moves on. A session with a combo that has tracks in it stays in Quick. Doing the same in rekordbox means dragging the track into each playlist one by one.*
 
 **Is there one playlist with everything I've kept?**<br>
 *Yes: click **+ Master playlist** next to the Quick / Manual switch and give it a name. Every track you put into any of your playlists also goes into it; Trash, Mixed and Pending never do, and a track you change to one of those comes back out. Once it has tracks, it stays on for that session and keeps its name. Crateful also combines each playlist across all your sessions in `crate-sort/_all-sessions/`, so `_all-sessions/<name>.m3u8` holds every kept track from every session.*
@@ -197,7 +197,7 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 *Yes. Crateful plays each track from wherever the playlist says it is, external drives included. Just have the drive plugged in while you sort. Crateful's own sessions are saved on your Mac in `~/Music/crateful`.*
 
 **Is my library uploaded anywhere?**<br>
-*No. Crateful runs entirely on your Mac and never sends anything about your library. The only thing it does online is ask GitHub once a day whether there's a new version (you can turn that off in Preferences).*
+*No. Crateful runs entirely on your Mac and never sends anything about your library. The only thing it does online is ask GitHub, each time it opens, whether there's a new version (you can turn that off in Preferences).*
 
 **How do I update?**<br>
 *When there's a new version, a note appears in the sidebar (or use **Crateful → Check for Updates…**). Download it, and drag the new Crateful into Applications to replace the old one. Your sessions aren't touched: they live in your music folder, not in the app.*
