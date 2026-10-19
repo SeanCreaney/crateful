@@ -3,7 +3,7 @@
 # Crateful
 
 **Simply sort your exported rekordbox.m3u8/.txt files.**<br>
-Listen to a track, press one key, move on. One key can drop a track into several playlists at once.<br>
+Listen to a track, press its keys, move on. Put a track into as many playlists as you like in one go.<br>
 Sort, split by BPM, rate, clear out duplicates, and see the hours you've saved.
 
 ![macOS app](https://img.shields.io/badge/macOS-app-000000?logo=apple&logoColor=white)
@@ -17,9 +17,14 @@ Sort, split by BPM, rate, clear out duplicates, and see the hours you've saved.
 
 </div>
 
-### One key, several playlists
+### Several playlists in one go
 
-The thing rekordbox can't do: put a track into **Club** *and* **Peak Time** with a single key press. Make a combo once (say **4 = Club + Peak Time**), and every time you press 4 the track lands in both playlists and the next one starts playing. No dragging the same track twice, no Ctrl-clicking playlists. Make as many combos as you like, and Crate Rate tags work the same way.
+The thing rekordbox can't do quickly: put a track into **Club** *and* **Peak Time** without dragging it twice. Crate Sort has two ways, and you can switch between them (the **Quick / Manual** switch next to Playlists):
+
+- **Manual** (the default): press **1** and **3**, they light up, press **Enter**. Press a key again to take it off. Any mix of playlists, no setting up.
+- **Quick**: one key per track and straight on to the next. Make a combo once (say **4 = Club + Peak Time**) and every press of 4 puts the track in both.
+
+Add a **master playlist** and every track you keep also goes into it automatically, so you end up with one list of everything you kept. Crate Rate tags work the Manual way: switch on as many as you like, then Enter.
 
 ![One key puts the track into Club and Peak Time](docs/screenshots/crate-sort-combo.gif)
 
@@ -39,7 +44,7 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 
 | | |
 |---|---|
-| **Crate Sort**<br>Drop a `.m3u8` export and give every track one key. Enter for Trash, M for part of a mix, ↓ to decide later, 1–9 and 0 for your playlists. **Combos put a track in several playlists with one key** (e.g. 4 = Club + Peak Time). **Finish** writes everything into `FOR IMPORTING/`, ready for rekordbox. | ![Crate Sort](docs/screenshots/crate-sort.png) |
+| **Crate Sort**<br>Drop a `.m3u8` export and sort every track with your keys: 1–9 and 0 for your playlists, T for Trash, M for part of a mix, ↓ to decide later. **Manual** lets you pick several playlists then Enter; **Quick** is one key per track, with **combos** for several at once (e.g. 4 = Club + Peak Time). A **master playlist** collects every track you keep, and **↺ Previously used** adds playlists from your other sessions. **Finish** writes everything into `FOR IMPORTING/`, ready for rekordbox. | ![Crate Sort](docs/screenshots/crate-sort.png) |
 | **Crate Split**<br>Drop a rekordbox `.txt` export and get one playlist per BPM, e.g. `2026-10 Downloaded Tracks - 120.01-120.99`. Tracks on an exact whole BPM can get their own playlist. Optionally starts a sorting session for each one. | ![Crate Split](docs/screenshots/crate-split.gif) |
 | **Crate Rate**<br>1–5 stars plus your own tags (e.g. *Purple: Euphoric*), then Enter to save and continue. A tempo fader (±6 / 10 / 16 / WIDE) with master tempo lets you hear how a track holds up sped up, and −/+ jumps to the next whole BPM. | ![Crate Rate](docs/screenshots/crate-rate.png) |
 | **Crate Dedupe**<br>Drop rekordbox's collection `.xml` and go through your duplicates one song at a time: every copy side by side with its file type, bitrate, artwork, album, cues, plays and folder, plus its own player so you can hear the difference. The best copy is ticked for you; 1–9 changes what you keep, Enter moves on. It warns you before you lose a playlist, your cues or a Crate Sort playlist. Crateful deletes nothing: the copies to get rid of go into one playlist, `DupedTracksToDelete.m3u8`, to remove in rekordbox. | ![Crate Dedupe](docs/screenshots/crate-dedupe.png) |
@@ -50,7 +55,8 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 | | rekordbox | Crateful |
 |---|:---:|:---:|
 | One key per track, no dragging or scrolling | ✗ | ✓ |
-| **Add a track to several playlists with one key** (e.g. Club + Peak Time) | ✗ | ✓ |
+| **Add a track to several playlists in one go** (e.g. Club + Peak Time) | ✗ | ✓ |
+| One playlist of everything you kept, filled in as you go | ✗ | ✓ |
 | Know exactly where you left off, and how far through you are | ✓ | ✓ |
 | Park unsure tracks and get taken back to them at the end | ✗ | ✓ |
 | Split a dump into one playlist per BPM in one go | ✗ | ✓ |
@@ -63,12 +69,32 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 <details>
 <summary><b>Crate Sort</b></summary>
 
+**Manual** (the default)
+
 | Key | Does |
 |---|---|
+| 1–9, 0 | switch a playlist on or off for this track: as many as you like |
+| Enter | confirm and go to the next track |
+| T | Trash |
+| M | Mixed (part of a mix) |
+| ↓ | Pending Decision: revisited at the end |
+
+T, M and ↓ only work while no playlist is switched on. Going back to a track (↑) keeps you on it until you press Enter.
+
+**Quick**
+
+| Key | Does |
+|---|---|
+| 1–9, 0 | your playlists and combos: one press and on to the next track. A combo is one key for several playlists, e.g. 4 = Club + Peak Time |
 | Enter | Trash |
 | M | Mixed (part of a mix) |
 | ↓ | Pending Decision: revisited at the end |
-| 1–9, 0 | your playlists and combos (add them with **+ Add Playlist** or the + key). A combo is one key for several playlists, e.g. 4 = Club + Peak Time |
+
+**Both**
+
+| Key | Does |
+|---|---|
+| + | add a playlist (or **↺ Previously used** to pick ones from your other sessions) |
 | ↑ | back to the last track |
 | Space | play / pause |
 | ← → | jump 15 s (Shift: 60 s), or click the waveform |
@@ -141,7 +167,16 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 *No. Audio files are only read. Crateful writes playlists into its own folder (`~/Music/crateful`), and nothing reaches rekordbox until you import a playlist yourself.*
 
 **Can a track go into more than one playlist, say Club and Peak Time?**<br>
-*Yes, with one key. Add Club and Peak Time as playlists, then add one more key and tick both of them: that makes a combo. One press of it (say 4 = Club + Peak Time) puts the track in both and moves on. Doing the same in rekordbox means dragging the track into each playlist one by one. In Crate Rate, tags work the same way: switch on as many as you like, then Enter.*
+*Yes. In **Manual** (the default), press 1 and 3, then Enter: the track goes into both. In **Quick**, make a combo once (add one more key and tick Club and Peak Time), and one press of it (say 4) puts the track in both and moves on. A session with a combo that has tracks in it stays in Quick. Doing the same in rekordbox means dragging the track into each playlist one by one.*
+
+**Is there one playlist with everything I've kept?**<br>
+*Yes: click **+ Master playlist** next to the Quick / Manual switch and give it a name. Every track you put into any of your playlists also goes into it; Trash, Mixed and Pending never do, and a track you change to one of those comes back out. Once it has tracks, it stays on for that session (you can still rename it). Crateful also combines each playlist across all your sessions in `crate-sort/_all-sessions/`, so `_all-sessions/<name>.m3u8` holds every kept track from every session.*
+
+**Can I remove a playlist key?**<br>
+*Only while nothing has been sorted into it. Once a key (or combo) has tracks, you can rename it (⋯) but not remove it, so nothing you've sorted goes missing.*
+
+**Can I rename a playlist?**<br>
+*Yes, in Crateful (⋯ on its key, or on the master playlist). The file is renamed and your tracks follow it. Don't rename Crateful's `.m3u8` files in Finder: Crateful rewrites each playlist from your decisions as you sort, so a file renamed inside a playlist's folder is replaced. Copy a playlist somewhere else if you want to keep a snapshot.*
 
 **What happens when I import into rekordbox? Are my old playlists affected?**<br>
 *Each `.m3u8` in `FOR IMPORTING/` comes in as a new playlist. Your existing playlists aren't touched, and tracks aren't duplicated: rekordbox matches them to the tracks already in your collection. If a playlist with the same name already exists, you'll get a second one beside it, so delete or rename the old one if the new one replaces it.*
@@ -175,6 +210,9 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 
 **Which audio formats play?**<br>
 *MP3, WAV, AIFF, FLAC and M4A/AAC.*
+
+**My playlist has video files in it (.mpg, .mp4). What happens?**<br>
+*They're left out, so they can't stall the player. When you start a session or split a `.txt`, any track Crateful can't play is taken out and listed in `~/Music/crateful/unplayable/`, one playlist per file type (e.g. `Unplayable - MPG.m3u8`), so you know which they were. Crate Split warns you first, and the session's overview shows how many were left out. The files themselves aren't touched.*
 
 **Why does macOS warn me the first time I open it?**<br>
 *Crateful is free and isn't sold through Apple, so it isn't signed with a paid Apple developer account. Use **Open Anyway** (see Get started) once and it opens normally after that. Only download it from this repository's Releases.*
