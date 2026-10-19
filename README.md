@@ -170,13 +170,10 @@ Preferences are saved in `crateful.config.json` in `~/Library/Application Suppor
 *Yes. In **Manual** (the default), press 1 and 3, then Enter: the track goes into both. In **Quick**, make a combo once (add one more key and tick Club and Peak Time), and one press of it (say 4) puts the track in both and moves on. A session with a combo that has tracks in it stays in Quick. Doing the same in rekordbox means dragging the track into each playlist one by one.*
 
 **Is there one playlist with everything I've kept?**<br>
-*Yes: click **+ Master playlist** next to the Quick / Manual switch and give it a name. Every track you put into any of your playlists also goes into it; Trash, Mixed and Pending never do, and a track you change to one of those comes back out. Once it has tracks, it stays on for that session (you can still rename it). Crateful also combines each playlist across all your sessions in `crate-sort/_all-sessions/`, so `_all-sessions/<name>.m3u8` holds every kept track from every session.*
+*Yes: click **+ Master playlist** next to the Quick / Manual switch and give it a name. Every track you put into any of your playlists also goes into it; Trash, Mixed and Pending never do, and a track you change to one of those comes back out. Once it has tracks, it stays on for that session and keeps its name. Crateful also combines each playlist across all your sessions in `crate-sort/_all-sessions/`, so `_all-sessions/<name>.m3u8` holds every kept track from every session.*
 
-**Can I remove a playlist key?**<br>
-*Only while nothing has been sorted into it. Once a key (or combo) has tracks, you can rename it (⋯) but not remove it, so nothing you've sorted goes missing.*
-
-**Can I rename a playlist?**<br>
-*Yes, in Crateful (⋯ on its key, or on the master playlist). The file is renamed and your tracks follow it. Don't rename Crateful's `.m3u8` files in Finder: Crateful rewrites each playlist from your decisions as you sort, so a file renamed inside a playlist's folder is replaced. Copy a playlist somewhere else if you want to keep a snapshot.*
+**Can I change, rename or remove a playlist key?**<br>
+*You can move a playlist to another free key any time (⋯ on its key), and combos that use it follow. While nothing has been sorted into it, you can also rename or remove it. Once it has tracks, its name stays and it can't be removed, so the playlist file (and what you've imported into rekordbox) always matches and nothing you've sorted goes missing. Don't rename Crateful's `.m3u8` files in Finder: Crateful rewrites each playlist from your decisions as you sort, so a file renamed inside a playlist's folder is replaced. Copy a playlist somewhere else if you want to keep a snapshot.*
 
 **What happens when I import into rekordbox? Are my old playlists affected?**<br>
 *Each `.m3u8` in `FOR IMPORTING/` comes in as a new playlist. Your existing playlists aren't touched, and tracks aren't duplicated: rekordbox matches them to the tracks already in your collection. If a playlist with the same name already exists, you'll get a second one beside it, so delete or rename the old one if the new one replaces it.*
