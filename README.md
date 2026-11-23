@@ -82,7 +82,7 @@ Tracks sorted and rated, duplicates cleared, your real pace, and **the time you'
 <div align="center">
 
 **Crate Find · Crate Move · Crate Dedupe · Activity**<br>
-Crateful is free, made by one DJ. Tip **£5 or more** and you get the PRO tools as a thank-you.
+Crateful is free, made by one developer/DJ. Tip **£5 or more** and you get the PRO tools as a thank-you.
 
 <a href="https://buymeacoffee.com/seancreaney"><img alt="Support Crateful" src="https://img.shields.io/badge/Support%20Crateful-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
 
@@ -300,7 +300,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 ## FAQ
 
 **Found a bug or have an idea?**<br>
-*Post it in [Discussions](https://github.com/SeanCreaney/crateful/discussions): others can see it and add to it. For anything private (like your supporter code), email dev.crateful@gmail.com. Crateful is made by one DJ in their spare time, so thanks for your patience.*
+*Post it in [Discussions](https://github.com/SeanCreaney/crateful/discussions): others can see it and add to it. For anything private (like your supporter code), email dev.crateful@gmail.com. Crateful is made by one developer/DJ in their spare time, so thanks for your patience.*
 
 **What's free and what's PRO?**<br>
 *Crate Sort, Crate Split, Crate Rate and Crate Stats' overview are free, with no limits. Crate Find, Crate Move, Crate Dedupe and Crate Stats → Activity are PRO: tip £5 or more and you get them as a thank-you. Every 3rd session, free users see a short note about PRO; supporters never do.*
