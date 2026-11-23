@@ -52,7 +52,7 @@ Drop a `.m3u8` export and sort every track with your keys: **1–9 and 0** for y
 - **Quick** (the default): one key per track and straight on to the next. Make a **combo** once (say **4 = Club + Peak Time**) and every press of 4 puts the track in both.
 - **Manual**: press **1** and **3**, they light up, press **Enter**. Any mix of playlists, no setting up.
 
-A **master playlist** collects every track you keep, **↺ Previously used** brings back playlists from your other sessions, and **Finish** writes everything into `FOR IMPORTING/`, ready for rekordbox.
+A **master playlist** collects every track you keep, **↺ Previously used** brings back playlists from your other sessions, and **Finish** writes everything into `for_importing/`, ready for rekordbox.
 
 ![Crate Sort: one key per track, and combo 4 putting a track into Club and Peak Time](docs/screenshots/crate-sort.gif)
 
@@ -124,7 +124,7 @@ One code unlocks all three PRO tools on one Mac. It works offline too: Crateful 
 3. Crateful reads the tracklist and looks for every track in your collection, on your Mac.
 4. Check the matches, then import `<name>_owned.m3u8` into rekordbox (**File → Import → Import Playlist**), or press **Sort Playlist in Crate Sort**.
 
-Every find is kept in `~/Music/crateful/crate-find/`.
+Every find is kept in `~/Music/crateful/crate_find/`.
 
 </details>
 
@@ -154,7 +154,7 @@ Your **Same track** and **Incorrect** choices always win over all of the above.
 
 **Gather a playlist's music files into one folder, named after the playlist.** Drop a playlist (a rekordbox `.m3u8`, a Crate Sort playlist or a Crate Find `_owned.m3u8`), or several at once, and see exactly what will happen before anything moves.
 
-- **Move or copy**, into `crateful/crate-move/<name>` or a folder you choose.
+- **Move or copy**, into `crateful/crate_move/<name>` or a folder you choose.
 - A track in **more than one playlist** is moved once, never copied twice.
 - **Nothing is ever overwritten**: a different file with the same name goes into a `Duplicates` folder. Moves to another drive are copied and checked before the original is removed.
 - Run it again later and **only the new tracks move**. **Put back** undoes any move.
@@ -264,13 +264,13 @@ T, M and ↓ only work while no playlist is switched on. Going back to a track (
 
 ## Getting results into rekordbox
 
-Drag the `.m3u8` files from a session's `FOR IMPORTING/` folder into rekordbox (or **File → Import → Import Playlist**). Tracks match your existing collection by file location, so cues, grids and ratings stay intact.
+Drag the `.m3u8` files from a session's `for_importing/` folder into rekordbox (or **File → Import → Import Playlist**). Tracks match your existing collection by file location, so cues, grids and ratings stay intact.
 
 **Crate Find:** import `<name>_owned.m3u8` from the find's folder (**Show in Finder** on its results).
 
 **Crate Move:** after a move (not a copy), rekordbox still points at the old places. In rekordbox choose **File → Display All Missing Files**, select them, then **Relocate** and pick the new folder. Relocating keeps your cues, beat grids and playlists. Crate Move shows these steps when it's done.
 
-**Duplicates:** import `crate-dedupe/FOR IMPORTING/DupedTracksToDelete.m3u8`, select all its tracks and choose **Remove from Collection**. The copies you kept stay, with their cues and playlists. Removing from the collection doesn't delete the files from your drive.
+**Duplicates:** import `crate_dedupe/for_importing/DupedTracksToDelete.m3u8`, select all its tracks and choose **Remove from Collection**. The copies you kept stay, with their cues and playlists. Removing from the collection doesn't delete the files from your drive.
 
 ## Settings
 
@@ -303,7 +303,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 *Yes. In **Manual**, press 1 and 3, then Enter. In **Quick** (the default), make a combo once and one press of it puts the track in both and moves on.*
 
 **What happens when I import into rekordbox? Are my old playlists affected?**<br>
-*Each `.m3u8` in `FOR IMPORTING/` comes in as a new playlist. Your existing playlists aren't touched, and tracks aren't duplicated: rekordbox matches them to the tracks already in your collection.*
+*Each `.m3u8` in `for_importing/` comes in as a new playlist. Your existing playlists aren't touched, and tracks aren't duplicated: rekordbox matches them to the tracks already in your collection.*
 
 **Do I need rekordbox?**<br>
 *Not for Crate Sort, Crate Rate or Crate Move: they work with any `.m3u8` playlist. Crate Split, Crate Find and Crate Dedupe need rekordbox's exports (the `.txt` for BPMs, the collection `.xml` for Find and Dedupe).*
@@ -324,7 +324,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 *When there's a new version, a note appears in the sidebar. Download it and drag the new Crateful into Applications. Your sessions and your PRO unlock aren't touched.*
 
 **Which audio formats play?**<br>
-*MP3, WAV, AIFF, FLAC and M4A/AAC. Video files in a playlist are left out and listed in `~/Music/crateful/unplayable/`.*
+*MP3, WAV, AIFF, FLAC and M4A/AAC. Video files in a playlist are left out and listed in `~/Music/crateful/unplayable_tracks/`.*
 
 **Why does macOS warn me the first time I open it?**<br>
 *Crateful isn't sold through Apple, so it isn't signed with a paid Apple developer account. Use **Open Anyway** (see Get started) once. Only download it from this repository's Releases.*
