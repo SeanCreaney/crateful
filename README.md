@@ -84,7 +84,7 @@ Tracks sorted and rated, duplicates cleared, your real pace, and **the time you'
 **Crate Find · Crate Move · Crate Dedupe · Activity**<br>
 Crateful is free, made by one DJ. Tip **£5 or more** and you get the PRO tools as a thank-you.
 
-<a href="https://buymeacoffee.com/seancreaney"><img alt="Buy me a beer (£5+)" src="https://img.shields.io/badge/Buy%20me%20a%20beer%20(%C2%A35%2B)-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
+<a href="https://buymeacoffee.com/seancreaney"><img alt="Support Crateful (£5+)" src="https://img.shields.io/badge/Support%20Crateful%20(%C2%A35%2B)-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
 
 </div>
 
@@ -354,7 +354,7 @@ Crateful is an independent project and isn't affiliated with or endorsed by Alph
 <div align="center">
 <br>
 
-<a href="https://buymeacoffee.com/seancreaney"><img alt="Buy me a beer (£5+)" src="https://img.shields.io/badge/Buy%20me%20a%20beer%20(%C2%A35%2B)-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
+<a href="https://buymeacoffee.com/seancreaney"><img alt="Support Crateful (£5+)" src="https://img.shields.io/badge/Support%20Crateful%20(%C2%A35%2B)-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
 
 <br><br>
 <sub>A Lucky Cat Collective Creation</sub>
