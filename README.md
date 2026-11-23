@@ -4,7 +4,7 @@
 
 **Sort your rekordbox playlists at the speed you listen.**<br>
 Hear a track, press a key, next. Put a track into several playlists in one press.<br>
-Free to sort, split and rate. **PRO** finds what you already own, gathers playlists into folders, clears out duplicates and tells any track's whole story.
+Free to sort, split and rate. **PRO** finds what you already own, gathers playlists into folders, clears out duplicates and tells any track's full history.
 
 ![macOS app](https://img.shields.io/badge/macOS-app-000000?logo=apple&logoColor=white)
 ![Apple Silicon and Intel](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-555555)
@@ -37,7 +37,7 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 | **Crate Find** (beta): which tracks of a Spotify, YouTube or SoundCloud playlist you already own | | ✓ |
 | **Crate Move** (beta): gather a playlist's files into one folder | | ✓ |
 | **Crate Dedupe**: compare duplicates side by side and keep the best | | ✓ |
-| **Activity**: everything you've done, and any track's whole story | | ✓ |
+| **Activity**: everything you've done, and any track's full history | | ✓ |
 | | **Free** | **Thank-you for a £5+ tip** |
 
 ---
@@ -71,7 +71,7 @@ Drop a playlist, or use **Pick a Crateful playlist** to rate one you've sorted. 
 
 ## Crate Stats
 
-Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out. With PRO, **Activity** lists everything you've done in every tool, with Undo where it's safe, and **Look up a track** shows one track's whole story: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved.
+Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out. With PRO, **Activity** lists everything you've done in every tool, with Undo where it's safe, and **Look up a track** shows one track's full history: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved.
 
 ![Crate Stats](docs/screenshots/crate-stats.png)
 
