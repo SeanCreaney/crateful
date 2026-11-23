@@ -329,7 +329,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 *Public (or unlisted) playlists from **Spotify** (playlists and albums), **YouTube** and YouTube Music, and **SoundCloud** sets. Spotify only shares the first 100 tracks of a playlist, so split a longer one or paste the rest. Lists private to your account (like Liked videos) can't be read: copy the tracks and use **Paste a list**.*
 
 **Is my library uploaded anywhere?**<br>
-*No. Crateful runs on your Mac and never sends anything about your library. It goes online to check for a new version and read a small status file from this repository, to read a playlist's public page when you give Crate Find a link, and, if you unlock PRO, to check your supporter code (the code and an anonymous id for your Mac, nothing else). See the [privacy policy](https://crateful-codes.dev-crateful.workers.dev/privacy).*
+*No. Crateful runs on your Mac and never sends anything about your library. It goes online to check for a new version and read a small status file from this repository (this counts how many times each app version is opened, by version number only), to read a playlist's public page when you give Crate Find a link, and, if you unlock PRO, to check your supporter code (the code and an anonymous id for your Mac, nothing else). See the [privacy policy](https://crateful-codes.dev-crateful.workers.dev/privacy).*
 
 **My music lives on an external drive. Does that work?**<br>
 *Yes. Crateful plays each track from wherever the playlist says it is. Just have the drive plugged in while you sort.*
