@@ -71,9 +71,21 @@ Drop a playlist, or use **Pick a Crateful playlist** to rate one you've sorted. 
 
 ## Crate Stats
 
-Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out. With PRO, **Activity** lists everything you've done in every tool, with Undo where it's safe, and **Look up a track** shows one track's full history: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved. Step through any **week, month or year** to see what you did in it.
+Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out.
 
-![Crate Stats](docs/screenshots/crate-stats.png)
+![Crate Stats: tracks sorted and rated, your pace and the time you've saved](docs/screenshots/crate-stats.png)
+
+### Activity <sup>PRO</sup>
+
+**Everything you've done in every tool**, with Undo where it's safe.
+
+- Step through any **week, month or year**. Each bar is split by tool, and hovering over it shows that day's figures.
+- **Look up a track** to see its full history: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved.
+- **Your week** and **Your month** pop up at 9am on a Monday and on the 1st of the month. You can choose weekly, every two weeks or monthly, or turn them off, in Preferences.
+
+![Activity: week, month and year, a day's figures, and one track's history](docs/screenshots/activity.gif)
+
+<p align="center"><img src="docs/screenshots/recap-month.png" width="380" alt="Your month in Crateful"></p>
 
 ---
 
@@ -295,6 +307,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 - **Start each track:** from the top, or partway in (say 30%) to skip long intros.
 - **Collection .xml:** the rekordbox collection Crate Find and Crate Dedupe use, a reminder to export a fresh one, and **Backups** of every one you've given it.
 - **Preferred file type:** which copy Crate Find and Crate Dedupe pick first.
+- **Your recap** <sup>PRO</sup>: weekly, every two weeks, monthly or off.
 - **Export everything / Import:** all your Crateful data in one `.zip` (never your music), to move to another Mac or keep safe.
 
 ## FAQ
