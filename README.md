@@ -37,7 +37,7 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 | **Crate Find** (beta): which tracks of a Spotify, YouTube or SoundCloud playlist you already own | | ✓ |
 | **Crate Move** (beta): gather a playlist's files into one folder | | ✓ |
 | **Crate Dedupe**: compare duplicates side by side and keep the best | | ✓ |
-| **Activity**: everything you've done, and any track's full history | | ✓ |
+| **Activity**: undo your choices, and trace any track's history across every tool | | ✓ |
 | | **Free** | **Thank-you for a £5+ tip** |
 
 ---
