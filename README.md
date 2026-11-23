@@ -2,33 +2,24 @@
 
 # Crateful
 
-**Simply sort your exported rekordbox.m3u8/.txt files.**<br>
-Listen to a track, press its keys, move on. Put a track into as many playlists as you like in one go.<br>
-Sort, split by BPM, rate, clear out duplicates, and see the hours you've saved.
+**Sort your rekordbox playlists at the speed you listen.**<br>
+Hear a track, press a key, next. Put a track into several playlists in one press.<br>
+Free to sort, split and rate. **PRO** finds what you already own, gathers playlists into folders and clears out duplicates.
 
 ![macOS app](https://img.shields.io/badge/macOS-app-000000?logo=apple&logoColor=white)
 ![Apple Silicon and Intel](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-555555)
 ![Runs locally](https://img.shields.io/badge/runs-locally-3ad0bd)
-![Free](https://img.shields.io/badge/price-free-ffb020)
+![Free + PRO](https://img.shields.io/badge/free-%2B%20PRO-ffb020)
 
 **[Download Crateful for Mac](https://github.com/SeanCreaney/crateful/releases/latest)**
 
-![Crate Sort](docs/screenshots/crate-sort.png)
+![Sorting with one key per track, and one key for two playlists](docs/screenshots/crate-sort.gif)
+
+[Free tools](#free-tools) · [PRO tools](#pro-tools) · [Get started](#get-started) · [Keys](#keys) · [FAQ](#faq)
 
 </div>
 
-### Several playlists in one go
-
-The thing rekordbox can't do quickly: put a track into **Club** *and* **Peak Time** without dragging it twice. Crate Sort has two ways, and you can switch between them (the **Quick / Manual** switch next to Playlists):
-
-- **Quick** (the default): one key per track and straight on to the next. Make a combo once (say **4 = Club + Peak Time**) and every press of 4 puts the track in both.
-- **Manual**: press **1** and **3**, they light up, press **Enter**. Press a key again to take it off. Any mix of playlists, no setting up.
-
-Add a **master playlist** and every track you keep also goes into it automatically, so you end up with one list of everything you kept. Crate Rate tags work the Manual way: switch on as many as you like, then Enter.
-
-![One key puts the track into Club and Peak Time](docs/screenshots/crate-sort-combo.gif)
-
-### Get started
+## Get started
 
 1. Download **Crateful-mac.zip** from the [latest release](https://github.com/SeanCreaney/crateful/releases/latest) and unzip it.
 2. Drag **Crateful** into your **Applications** folder.
@@ -37,18 +28,148 @@ Add a **master playlist** and every track you keep also goes into it automatical
 
 Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 
-> [!NOTE]
-> Built and tested on macOS with rekordbox exports. Sorting and rating use plain `.m3u8` playlists, so other DJ software should work too, but hasn't been tested yet.
+| | Free | PRO |
+|---|:---:|:---:|
+| **Crate Sort**: sort a playlist with your keys | ✓ | ✓ |
+| **Crate Split**: one playlist per BPM | ✓ | ✓ |
+| **Crate Rate**: stars, tags and a tempo fader | ✓ | ✓ |
+| **Crate Stats**: your pace and the hours you've saved | ✓ | ✓ |
+| **Crate Find**: which tracks of a Spotify, YouTube or SoundCloud playlist you already own | | ✓ |
+| **Crate Move**: gather a playlist's files into one folder | | ✓ |
+| **Crate Dedupe**: compare duplicates side by side and keep the best | | ✓ |
+| | **Free** | **Tip £5, once** |
 
-## The tools
+---
 
-| | |
-|---|---|
-| **Crate Sort**<br>Drop a `.m3u8` export and sort every track with your keys: 1–9 and 0 for your playlists, T for Trash, M for part of a mix, ↓ to decide later. **Manual** lets you pick several playlists then Enter; **Quick** is one key per track, with **combos** for several at once (e.g. 4 = Club + Peak Time). A **master playlist** collects every track you keep, and **↺ Previously used** adds playlists from your other sessions. **Finish** writes everything into `FOR IMPORTING/`, ready for rekordbox. | ![Crate Sort](docs/screenshots/crate-sort.png) |
-| **Crate Split**<br>Drop a rekordbox `.txt` export and get one playlist per BPM, e.g. `2026-10 Downloaded Tracks - 120.01-120.99`. Tracks on an exact whole BPM can get their own playlist. Optionally starts a sorting session for each one. | ![Crate Split](docs/screenshots/crate-split.gif) |
-| **Crate Rate**<br>1–5 stars plus your own tags (e.g. *Purple: Euphoric*), then Enter to save and continue. A tempo fader (±6 / 10 / 16 / WIDE) with master tempo lets you hear how a track holds up sped up, and −/+ jumps to the next whole BPM. | ![Crate Rate](docs/screenshots/crate-rate.png) |
-| **Crate Dedupe**<br>Drop rekordbox's collection `.xml` and go through your duplicates one song at a time: every copy side by side with its file type, bitrate, artwork, album, cues, plays and folder, plus its own player so you can hear the difference. The best copy is ticked for you; 1–9 changes what you keep, Enter moves on. It warns you before you lose a playlist, your cues or a Crate Sort playlist. Crateful deletes nothing: the copies to get rid of go into one playlist, `DupedTracksToDelete.m3u8`, to remove in rekordbox. | ![Crate Dedupe](docs/screenshots/crate-dedupe.png) |
-| **Crate Stats**<br>Tracks sorted and rated, duplicates cleared, your real pace, and the time saved compared with doing the same in rekordbox. Every key press is timed, with breaks left out. Time saved counts finished sessions; ones you're part way through are marked in progress. | ![Crate Stats](docs/screenshots/crate-stats.png) |
+# Free tools
+
+## Crate Sort
+
+Drop a `.m3u8` export and sort every track with your keys: **1–9 and 0** for your playlists, **Enter** for Trash, **M** for part of a mix, **↓** to decide later. Nothing to drag, nothing to scroll.
+
+**Several playlists in one go**, the thing rekordbox can't do quickly. Put a track into **Club** *and* **Peak Time** without dragging it twice:
+
+- **Quick** (the default): one key per track and straight on to the next. Make a **combo** once (say **4 = Club + Peak Time**) and every press of 4 puts the track in both.
+- **Manual**: press **1** and **3**, they light up, press **Enter**. Any mix of playlists, no setting up.
+
+A **master playlist** collects every track you keep, **↺ Previously used** brings back playlists from your other sessions, and **Finish** writes everything into `FOR IMPORTING/`, ready for rekordbox.
+
+![Crate Sort: one key per track, and combo 4 putting a track into Club and Peak Time](docs/screenshots/crate-sort.gif)
+
+## Crate Split
+
+Drop a rekordbox `.txt` export and get **one playlist per BPM**, e.g. `2026-10 Downloaded Tracks - 120.01-120.99`. Tracks on an exact whole BPM can get their own playlist, and each one can start a sorting session straight away.
+
+![Crate Split: a .txt export becomes one playlist per BPM](docs/screenshots/crate-split.gif)
+
+## Crate Rate
+
+**1–5 stars** plus your own **tags** (e.g. *Dreamy Vocals*, *Rolling Bassline*), then **Enter** to save and move on. A **tempo fader** (±6 / 10 / 16 / WIDE) with master tempo lets you hear how a track holds up sped up, and **[ ]** jumps to the next whole BPM.
+
+![Crate Rate: stars, a tag, the tempo fader, next](docs/screenshots/crate-rate.gif)
+
+## Crate Stats
+
+Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out.
+
+![Crate Stats](docs/screenshots/crate-stats.png)
+
+---
+
+# PRO tools
+
+<div align="center">
+
+**Crate Find · Crate Move · Crate Dedupe**<br>
+Unlocked for good with one tip of **£5 or more**. No subscription.
+
+<a href="https://buymeacoffee.com/seancreaney"><img alt="Tip £5 to unlock PRO" src="https://img.shields.io/badge/Tip%20%C2%A35%20to%20unlock%20PRO-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
+
+</div>
+
+### How to unlock
+
+1. Tip **£5 or more** in one go on [Buy Me a Coffee](https://buymeacoffee.com/seancreaney).
+2. Your **supporter code** arrives by email within a few minutes.
+3. In Crateful, click any PRO tool, open **Already have a code?**, paste it in and press **Unlock**.
+
+One code unlocks all three PRO tools on one Mac. It works offline too: Crateful checks the code online about once a week.
+
+![A PRO tool before and after unlocking with a supporter code](docs/screenshots/pro-unlock.gif)
+
+## Crate Find <sup>PRO</sup>
+
+**Paste a Spotify, YouTube or SoundCloud playlist link and see which tracks you already own.** Crate Find checks every track against your rekordbox collection and sorts them into three tabs:
+
+- **Owned**: you have this exact version. Saved as `<name>_owned.m3u8`, in the playlist's order, ready to import.
+- **Different version**: you have the song, but another mix or edit of it.
+- **Missing**: not in your collection. Listed in `<name>_missing.txt`, ready to search for (or **Copy all**).
+
+![Crate Find: paste a Spotify link, see what you own, what's a different version and what's missing](docs/screenshots/crate-find.gif)
+
+**Check the matches as you go.** **▶** plays your copy right there. On **Different version**, **Add anyway** uses your version in the playlist and **Same track** tells it yours is the same song under another name. On **Owned**, **Incorrect** marks a wrong match. Crate Find remembers your choices.
+
+![Hearing your version, Add anyway and Same track](docs/screenshots/crate-find-versions.gif)
+
+**Keep finds up to date.** Every find is kept. **Re-check** reads the playlist again, and when you give Crateful a newer collection `.xml`, old finds show which missing tracks you now own. Send the owned tracks straight to **Crate Sort** or **Crate Move**.
+
+<details>
+<summary><b>How Crate Find works, step by step</b></summary>
+
+1. In rekordbox, choose **File → Export Collection in xml format** and drop the file on Crate Find. You only do this once; give it a newer one whenever your collection has changed (Crate Dedupe uses the same one).
+2. Paste a playlist link from **Spotify**, **YouTube** or **SoundCloud**, or switch to **Paste a list** (one `Artist - Title` per line), and press **Find tracks**.
+3. Crateful reads the tracklist and looks for every track in your collection, on your Mac.
+4. Check the matches, then import `<name>_owned.m3u8` into rekordbox (**File → Import → Import Playlist**), or press **Sort Playlist in Crate Sort**.
+
+Every find is kept in `~/Music/crateful/crate-find/`.
+
+</details>
+
+<details>
+<summary><b>How it matches</b></summary>
+
+Crate Find only uses your collection `.xml` (each track's artist, title and file name). Nothing is guessed from the audio.
+
+1. **It reads each track as Artist and Title.** Spotify gives both. YouTube and SoundCloud only give a video or upload title, so Crate Find tidies it first: things like `(Official Video)`, `[HQ]`, `Premiere:` and `free download` come off, and it's split where the artist and title meet. If a title has no artist in it, the channel or uploader's name is tried as the artist.
+2. **It looks for the song's name, by that artist.** The song's name is the title before any brackets (`Paper Moon` in `Paper Moon (Extended Mix)`). Capitals, accents, punctuation and `&` / `and` don't matter. Folder names are never used.
+3. **It decides Owned or Different version.** It compares the full titles, leaving out what doesn't change the recording: `Original Mix`, `Album Version`, `Remastered`, `feat.` and featured artists, and a label or catalogue number in square brackets. Words like `Extended Mix`, `Dub` or `Someone Remix` on one side only mean a different version. For Spotify, the lengths must match too (within about 20 seconds), so a 3:08 radio edit isn't matched to your 7:59 original.
+4. **It picks your best copy**: the one you kept in Crate Dedupe, then your preferred file type (Preferences), then the highest bitrate.
+
+| In the playlist | In your collection | Result |
+|---|---|---|
+| Example Artist A – Night Drive | Example Artist A – Night Drive (Original Mix) | **Owned** |
+| Example Artist B & Friend – Glass Rooms | Example Artist B and Friend – Glass Rooms [LABEL001] | **Owned** |
+| Example Artist C – Paper Moon | Example Artist C – Paper Moon (Extended Mix) | **Different version** |
+| Example Artist D – Slow Signal (Dub) | Example Artist D – Slow Signal | **Different version** |
+| Example Artist E – Afterglow | Example Artist F – Afterglow | **Missing** (another artist's song) |
+
+Your **Same track** and **Incorrect** choices always win over all of the above.
+
+</details>
+
+## Crate Move <sup>PRO</sup>
+
+**Gather a playlist's music files into one folder, named after the playlist.** Drop a playlist (a rekordbox `.m3u8`, a Crate Sort playlist or a Crate Find `_owned.m3u8`), or several at once, and see exactly what will happen before anything moves.
+
+- **Move or copy**, into `crateful/crate-move/<name>` or a folder you choose.
+- A track in **more than one playlist** is moved once, never copied twice.
+- **Nothing is ever overwritten**: a different file with the same name goes into a `Duplicates` folder. Moves to another drive are copied and checked before the original is removed.
+- Run it again later and **only the new tracks move**. **Put back** undoes any move.
+- After a newer collection `.xml`, Crate Move shows how many moved tracks rekordbox has found again.
+
+![Crate Move: a playlist's files gathered into one folder](docs/screenshots/crate-move.gif)
+
+## Crate Dedupe <sup>PRO</sup>
+
+**Go through your duplicates one song at a time, every copy side by side**: file type, bitrate, artwork, album, cues, plays and folder, each with its own player so you can hear the difference.
+
+- The **best copy is suggested** (your preferred file type first). **1–9** changes what you keep, **Enter** moves on.
+- It **warns you** before you lose a playlist, your cues or a Crate Sort playlist.
+- **Crateful deletes nothing**: the copies to get rid of go into one playlist, `DupedTracksToDelete.m3u8`, to remove in rekordbox. Changed your mind? Undo any choice from **Crate Stats → Activity**.
+
+![Crate Dedupe: hear each copy, keep the suggested FLAC, next](docs/screenshots/crate-dedupe.gif)
+
+---
 
 ## Crateful vs sorting in rekordbox
 
@@ -57,17 +178,27 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 | One key per track, no dragging or scrolling | ✗ | ✓ |
 | **Add a track to several playlists in one go** (e.g. Club + Peak Time) | ✗ | ✓ |
 | One playlist of everything you kept, filled in as you go | ✗ | ✓ |
-| Know exactly where you left off, and how far through you are | ✓ | ✓ |
 | Park unsure tracks and get taken back to them at the end | ✗ | ✓ |
 | Split a dump into one playlist per BPM in one go | ✗ | ✓ |
-| Compare duplicate copies side by side and keep the best one | ✗ | ✓ |
 | See how long it took and the time you saved | ✗ | ✓ |
+| Check a Spotify, YouTube or SoundCloud playlist against your collection | ✗ | ✓ <sup>PRO</sup> |
+| Gather a playlist's files into one folder, and put them back if you change your mind | ✗ | ✓ <sup>PRO</sup> |
+| Compare duplicate copies side by side and keep the best one | ✗ | ✓ <sup>PRO</sup> |
 | Time per 100 tracks (real sessions) | ~30 min | **~5 min** |
 
 ## Keys
 
 <details>
 <summary><b>Crate Sort</b></summary>
+
+**Quick** (the default)
+
+| Key | Does |
+|---|---|
+| 1–9, 0 | your playlists and combos: one press and on to the next track. A combo is one key for several playlists, e.g. 4 = Club + Peak Time |
+| Enter | Trash |
+| M | Mixed (part of a mix) |
+| ↓ | Pending Decision: revisited at the end |
 
 **Manual**
 
@@ -81,16 +212,7 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 
 T, M and ↓ only work while no playlist is switched on. Going back to a track (↑) keeps you on it until you press Enter.
 
-**Quick** (the default)
-
-| Key | Does |
-|---|---|
-| 1–9, 0 | your playlists and combos: one press and on to the next track. A combo is one key for several playlists, e.g. 4 = Club + Peak Time |
-| Enter | Trash |
-| M | Mixed (part of a mix) |
-| ↓ | Pending Decision: revisited at the end |
-
-**With a master playlist** (either mode): **Enter** keeps a track in the master playlist only, and **T** is Trash. In Manual, Enter with playlist keys picked still confirms them.
+**With a master playlist** (either mode): **Enter** keeps a track in the master playlist only, and **T** is Trash.
 
 **Both**
 
@@ -121,7 +243,7 @@ T, M and ↓ only work while no playlist is switched on. Going back to a track (
 </details>
 
 <details>
-<summary><b>Crate Dedupe</b></summary>
+<summary><b>Crate Dedupe</b> <sup>PRO</sup></summary>
 
 | Key | Does |
 |---|---|
@@ -141,99 +263,79 @@ T, M and ↓ only work while no playlist is switched on. Going back to a track (
 
 Drag the `.m3u8` files from a session's `FOR IMPORTING/` folder into rekordbox (or **File → Import → Import Playlist**). Tracks match your existing collection by file location, so cues, grids and ratings stay intact.
 
-**Duplicates:** import `crate-dedupe/FOR IMPORTING/DupedTracksToDelete.m3u8`, select all its tracks and choose **Remove from Collection**. The copies you kept stay, with their cues and playlists. Don't move or rename files before you've done this (rekordbox matches by location). Removing from the collection doesn't delete the files from your drive.
+**Crate Find:** import `<name>_owned.m3u8` from the find's folder (**Show in Finder** on its results).
+
+**Crate Move:** after a move (not a copy), rekordbox still points at the old places. In rekordbox choose **File → Display All Missing Files**, select them, then **Relocate** and pick the new folder. Relocating keeps your cues, beat grids and playlists. Crate Move shows these steps when it's done.
+
+**Duplicates:** import `crate-dedupe/FOR IMPORTING/DupedTracksToDelete.m3u8`, select all its tracks and choose **Remove from Collection**. The copies you kept stay, with their cues and playlists. Removing from the collection doesn't delete the files from your drive.
 
 ## Settings
 
 Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 
-- **Music folder:** where your sessions, splits and ratings are saved (`~/Music/crateful` to start with). Pick a new one and choose to move your sessions there or start fresh. Nothing is ever deleted.
+- **Music folder:** where your sessions, splits and ratings are saved (`~/Music/crateful` to start with).
 - **Start each track:** from the top, or partway in (say 30%) to skip long intros.
-- **New versions:** Crateful checks GitHub each time it opens and shows a note in the sidebar when there's an update.
-
-<details>
-<summary>More: <code>crateful.config.json</code></summary>
-
-Preferences are saved in `crateful.config.json` in `~/Library/Application Support/Crateful/` (Finder: **Go → Go to Folder…**). Two more settings can be added there by hand (restart Crateful after):
-
-| Setting | What it does | Default |
-|---|---|---|
-| `rate_tags` | Crate Rate tag keys to start with (6–9, 0), each with a name, note and colour | none |
-| `hand_seconds_per_track` | Crate Stats: seconds per track doing the same in rekordbox | `18` (30 min per 100) |
-
-</details>
+- **Collection .xml:** the rekordbox collection Crate Find and Crate Dedupe use, a reminder to export a fresh one, and **Backups** of every one you've given it.
+- **Preferred file type:** which copy Crate Find and Crate Dedupe pick first.
+- **Export everything / Import:** all your Crateful data in one `.zip` (never your music), to move to another Mac or keep safe.
 
 ## FAQ
 
+**What's free and what's PRO?**<br>
+*Crate Sort, Crate Split, Crate Rate and Crate Stats are free, with no limits. Crate Find, Crate Move and Crate Dedupe are PRO: one tip of £5 or more unlocks them for good. Every 3rd session, free users see a short note about PRO; supporters never do.*
+
+**How does the supporter code work?**<br>
+*Tip £5 or more in one go on [Buy Me a Coffee](https://buymeacoffee.com/seancreaney) and your code is emailed to you within a few minutes. Paste it into any PRO tool's **Already have a code?** box. Each code is single-use: it unlocks Crateful on one Mac. Questions: dev.crateful@gmail.com.*
+
+**Do I need to be online for PRO?**<br>
+*Only to unlock. After that Crateful checks the code about once a week, and keeps working offline for up to 30 days between checks.*
+
 **Does it change my music or my rekordbox library?**<br>
-*No. Audio files are only read. Crateful writes playlists into its own folder (`~/Music/crateful`), and nothing reaches rekordbox until you import a playlist yourself.*
+*Your rekordbox library: never. Nothing reaches rekordbox until you import a playlist yourself. Your music files are only read, except by **Crate Move**, which moves (or copies) a playlist's files when you ask it to, after showing you exactly what will happen. It never overwrites or deletes a file, and any move can be put back.*
 
 **Can a track go into more than one playlist, say Club and Peak Time?**<br>
-*Yes. In **Manual**, press 1 and 3, then Enter: the track goes into both. In **Quick** (the default), make a combo once (add one more key and tick Club and Peak Time), and one press of it (say 4) puts the track in both and moves on. A session with a combo that has tracks in it stays in Quick. Doing the same in rekordbox means dragging the track into each playlist one by one.*
-
-**Is there one playlist with everything I've kept?**<br>
-*Yes: click **+ Master playlist** next to the Quick / Manual switch and give it a name. Every track you put into any of your playlists also goes into it; Trash, Mixed and Pending never do, and a track you change to one of those comes back out. Press **Enter** to keep a track in it only (no other playlist); **T** is Trash while it's on. Once it has tracks, it stays on for that session and keeps its name. Crateful also combines each playlist across all your sessions in `crate-sort/_all-sessions/`, so `_all-sessions/<name>.m3u8` holds every kept track from every session.*
-
-**Can I change, rename or remove a playlist key?**<br>
-*You can move a playlist to another free key any time (⋯ on its key), and combos that use it follow. While nothing has been sorted into it, you can also rename or remove it. Once it has tracks, its name stays and it can't be removed, so the playlist file (and what you've imported into rekordbox) always matches and nothing you've sorted goes missing. Don't rename Crateful's `.m3u8` files in Finder: Crateful rewrites each playlist from your decisions as you sort, so a file renamed inside a playlist's folder is replaced. Copy a playlist somewhere else if you want to keep a snapshot.*
+*Yes. In **Manual**, press 1 and 3, then Enter. In **Quick** (the default), make a combo once and one press of it puts the track in both and moves on.*
 
 **What happens when I import into rekordbox? Are my old playlists affected?**<br>
-*Each `.m3u8` in `FOR IMPORTING/` comes in as a new playlist. Your existing playlists aren't touched, and tracks aren't duplicated: rekordbox matches them to the tracks already in your collection. If a playlist with the same name already exists, you'll get a second one beside it, so delete or rename the old one if the new one replaces it.*
-
-**My music is organised in folders, with matching folders in rekordbox. Does Crateful change that?**<br>
-*No. Crateful never moves, renames or copies your music. The playlists it makes just point to the files where they already are, so your folders on disk stay exactly as they are. In rekordbox, drag the imported playlists into whichever playlist folder you like.*
+*Each `.m3u8` in `FOR IMPORTING/` comes in as a new playlist. Your existing playlists aren't touched, and tracks aren't duplicated: rekordbox matches them to the tracks already in your collection.*
 
 **Do I need rekordbox?**<br>
-*Not for Crate Sort or Crate Rate: they work with any `.m3u8` playlist, whichever app made it. Crate Split and Crate Dedupe need rekordbox: Split reads rekordbox's `.txt` export (that's where the BPMs come from), Dedupe its collection `.xml`.*
+*Not for Crate Sort, Crate Rate or Crate Move: they work with any `.m3u8` playlist. Crate Split, Crate Find and Crate Dedupe need rekordbox's exports (the `.txt` for BPMs, the collection `.xml` for Find and Dedupe).*
 
 **Does Crate Dedupe delete my duplicates?**<br>
-*No. Crateful never deletes or moves a file. The copies you don't keep go into one playlist, `DupedTracksToDelete.m3u8`, and you remove them in rekordbox yourself (see Getting results into rekordbox). A copy whose file can't be found is never put in it, and a song only goes in once you've kept at least one copy that's actually on your drive.*
+*No. The copies you don't keep go into one playlist, `DupedTracksToDelete.m3u8`, and you remove them in rekordbox yourself.*
 
-**Why does Crate Dedupe need the collection XML?**<br>
-*It's the only export that has everything needed to choose: every track in your collection with its file type, bitrate, length, cues, beat grid, play count and the playlists it's in. In rekordbox: **File → Export Collection in xml format**, then drop the file on Crate Dedupe. Artwork is read from the music files themselves (read only).*
-
-**I've deduped before. What happens when I drop a newer XML?**<br>
-*Crateful remembers what you chose, so songs you've done don't come up again. Copies you've removed in rekordbox are counted as removed, copies still waiting are shown as waiting (not asked again), and only new duplicates come up, including a new copy of a song you've already deduped.*
-
-**My music lives on an external drive. Does that work?**<br>
-*Yes. Crateful plays each track from wherever the playlist says it is, external drives included. Just have the drive plugged in while you sort. Crateful's own sessions are saved on your Mac in `~/Music/crateful`.*
+**Which playlists can Crate Find read?**<br>
+*Public (or unlisted) playlists from **Spotify** (playlists and albums), **YouTube** and YouTube Music, and **SoundCloud** sets. Spotify only shares the first 100 tracks of a playlist, so split a longer one or paste the rest. Lists private to your account (like Liked videos) can't be read: copy the tracks and use **Paste a list**.*
 
 **Is my library uploaded anywhere?**<br>
-*No. Crateful runs entirely on your Mac and never sends anything about your library. The only thing it does online is ask GitHub, each time it opens, whether there's a new version (you can turn that off in Preferences).*
+*No. Crateful runs on your Mac and never sends anything about your library. It goes online to check for a new version and read a small status file from this repository, to read a playlist's public page when you give Crate Find a link, and, if you unlock PRO, to check your supporter code (the code and an anonymous id for your Mac, nothing else). See the [privacy policy](https://crateful-codes.dev-crateful.workers.dev/privacy).*
+
+**My music lives on an external drive. Does that work?**<br>
+*Yes. Crateful plays each track from wherever the playlist says it is. Just have the drive plugged in while you sort.*
 
 **How do I update?**<br>
-*When there's a new version, a note appears in the sidebar (or use **Crateful → Check for Updates…**). Download it, and drag the new Crateful into Applications to replace the old one. Your sessions aren't touched: they live in your music folder, not in the app.*
-
-**Do I need anything installed?**<br>
-*No. Crateful is a normal Mac app: download, drag to Applications, open.*
+*When there's a new version, a note appears in the sidebar. Download it and drag the new Crateful into Applications. Your sessions and your PRO unlock aren't touched.*
 
 **Which audio formats play?**<br>
-*MP3, WAV, AIFF, FLAC and M4A/AAC.*
-
-**My playlist has video files in it (.mpg, .mp4). What happens?**<br>
-*They're left out, so they can't stall the player. When you start a session or split a `.txt`, any track Crateful can't play is taken out and listed in `~/Music/crateful/unplayable/`, one playlist per file type (e.g. `Unplayable - MPG.m3u8`), so you know which they were. Crate Split warns you first, and the session's overview shows how many were left out. The files themselves aren't touched.*
+*MP3, WAV, AIFF, FLAC and M4A/AAC. Video files in a playlist are left out and listed in `~/Music/crateful/unplayable/`.*
 
 **Why does macOS warn me the first time I open it?**<br>
-*Crateful is free and isn't sold through Apple, so it isn't signed with a paid Apple developer account. Use **Open Anyway** (see Get started) once and it opens normally after that. Only download it from this repository's Releases.*
-
-**My drive isn't plugged in. What happens?**<br>
-*Tracks show "File not found". Plug the drive in, go back to the session list and open the session again.*
+*Crateful isn't sold through Apple, so it isn't signed with a paid Apple developer account. Use **Open Anyway** (see Get started) once. Only download it from this repository's Releases.*
 
 **Does it work with Serato, Traktor or Engine DJ?**<br>
-*Crate Sort and Crate Rate use plain `.m3u8` playlists, so they should. Crate Split and Crate Dedupe read rekordbox's own exports specifically. Not tested yet: feedback welcome.*
+*Crate Sort, Crate Rate and Crate Move use plain `.m3u8` playlists, so they should. Crate Split, Crate Find and Crate Dedupe read rekordbox's own exports. Not tested yet: feedback welcome.*
 
 ## Disclaimer
 
-Crateful is an independent project and isn't affiliated with or endorsed by AlphaTheta or Pioneer DJ. rekordbox is a trademark of AlphaTheta Corporation. Provided as is, without warranty. Only download Crateful from this repository's Releases.
-
-## Support
-
-Crateful is free. If it saves you hours:
-
-<a href="https://buymeacoffee.com/seancreaney"><img alt="Buy me a beer" src="https://img.shields.io/badge/Buy%20me%20a%20beer-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
+Crateful is an independent project and isn't affiliated with or endorsed by AlphaTheta or Pioneer DJ. rekordbox is a trademark of AlphaTheta Corporation. Nor is it affiliated with Spotify, YouTube or SoundCloud; Crate Find only reads playlists you could open in a browser. Provided as is, without warranty. Only download Crateful from this repository's Releases.
 
 <div align="center">
 <br>
+
+<a href="https://buymeacoffee.com/seancreaney"><img alt="Tip £5 to unlock PRO" src="https://img.shields.io/badge/Tip%20%C2%A35%20to%20unlock%20PRO-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
+
+<br><br>
 <sub>A Lucky Cat Collective Creation</sub>
 <br>
 <sub><sub>ssentif eht ssentiw</sub></sub>
