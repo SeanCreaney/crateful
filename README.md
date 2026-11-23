@@ -71,7 +71,7 @@ Drop a playlist, or use **Pick a Crateful playlist** to rate one you've sorted. 
 
 ## Crate Stats
 
-Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out. With PRO, **Activity** lists everything you've done in every tool, with Undo where it's safe, and **Look up a track** shows one track's full history: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved. **Your week** and **Your month** recap what you've done, whenever you like.
+Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out. With PRO, **Activity** lists everything you've done in every tool, with Undo where it's safe, and **Look up a track** shows one track's full history: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved. **Last 7 days** and **Last 30 days** add up what you've done in that time.
 
 ![Crate Stats](docs/screenshots/crate-stats.png)
 
