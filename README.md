@@ -4,7 +4,7 @@
 
 **Sort your rekordbox playlists at the speed you listen.**<br>
 Hear a track, press a key, next. Put a track into several playlists in one press.<br>
-Free to sort, split and rate. **PRO** finds what you already own, gathers playlists into folders and clears out duplicates.
+Free to sort, split and rate. **PRO** finds what you already own, gathers playlists into folders, clears out duplicates and tells any track's whole story.
 
 ![macOS app](https://img.shields.io/badge/macOS-app-000000?logo=apple&logoColor=white)
 ![Apple Silicon and Intel](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-555555)
@@ -37,6 +37,7 @@ Needs macOS 11 (Big Sur) or newer. Works on Apple Silicon and Intel Macs.
 | **Crate Find** (beta): which tracks of a Spotify, YouTube or SoundCloud playlist you already own | | ✓ |
 | **Crate Move** (beta): gather a playlist's files into one folder | | ✓ |
 | **Crate Dedupe**: compare duplicates side by side and keep the best | | ✓ |
+| **Activity**: everything you've done, and any track's whole story | | ✓ |
 | | **Free** | **Thank-you for a £5+ tip** |
 
 ---
@@ -70,7 +71,7 @@ Drop a playlist, or use **Pick a Crateful playlist** to rate one you've sorted. 
 
 ## Crate Stats
 
-Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out. **Activity** lists everything you've done in every tool, with Undo where it's safe, and **Look up a track** shows one track's whole story: sorted, rated, found, kept in Crate Dedupe, moved.
+Tracks sorted and rated, duplicates cleared, your real pace, and **the time you've saved** compared with doing the same in rekordbox. Every key press is timed, with breaks left out. With PRO, **Activity** lists everything you've done in every tool, with Undo where it's safe, and **Look up a track** shows one track's whole story: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved.
 
 ![Crate Stats](docs/screenshots/crate-stats.png)
 
@@ -80,7 +81,7 @@ Tracks sorted and rated, duplicates cleared, your real pace, and **the time you'
 
 <div align="center">
 
-**Crate Find · Crate Move · Crate Dedupe**<br>
+**Crate Find · Crate Move · Crate Dedupe · Activity**<br>
 Crateful is free, made by one DJ. Tip **£5 or more** and you get the PRO tools as a thank-you, for good.
 
 <a href="https://buymeacoffee.com/seancreaney"><img alt="Buy me a beer (£5+)" src="https://img.shields.io/badge/Buy%20me%20a%20beer%20(%C2%A35%2B)-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
@@ -93,7 +94,7 @@ Crateful is free, made by one DJ. Tip **£5 or more** and you get the PRO tools 
 2. Your **supporter code** arrives by email within a few minutes.
 3. In Crateful, click any PRO tool, open **Already have a code?**, paste it in and press **Unlock**.
 
-One code unlocks all three PRO tools on one Mac. It works offline too: Crateful checks the code online about once a week.
+One code unlocks all the PRO tools on one Mac. It works offline too: Crateful checks the code online about once a week.
 
 > [!NOTE]
 > Crate Find and Crate Move are new in 2.0, so they're marked **beta**: there may be rough edges. Found a bug or have an idea? [Tell me in Discussions](https://github.com/SeanCreaney/crateful/discussions) or email dev.crateful@gmail.com.
@@ -302,7 +303,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 *Post it in [Discussions](https://github.com/SeanCreaney/crateful/discussions): others can see it and add to it. For anything private (like your supporter code), email dev.crateful@gmail.com. Crateful is made by one DJ in their spare time, so thanks for your patience.*
 
 **What's free and what's PRO?**<br>
-*Crate Sort, Crate Split, Crate Rate and Crate Stats are free, with no limits. Crate Find, Crate Move and Crate Dedupe are PRO: tip £5 or more and you get them as a thank-you, for good. Every 3rd session, free users see a short note about PRO; supporters never do.*
+*Crate Sort, Crate Split, Crate Rate and Crate Stats' overview are free, with no limits. Crate Find, Crate Move, Crate Dedupe and Crate Stats → Activity are PRO: tip £5 or more and you get them as a thank-you, for good. Every 3rd session, free users see a short note about PRO; supporters never do.*
 
 **How does the supporter code work?**<br>
 *Tip £5 or more in one go on [Buy Me a Coffee](https://buymeacoffee.com/seancreaney) and your code is emailed to you within a few minutes. Paste it into any PRO tool's **Already have a code?** box. Each code is single-use: it unlocks Crateful on one Mac. Questions: dev.crateful@gmail.com.*
