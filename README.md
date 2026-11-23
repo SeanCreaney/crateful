@@ -82,7 +82,7 @@ Tracks sorted and rated, duplicates cleared, your real pace, and **the time you'
 <div align="center">
 
 **Crate Find · Crate Move · Crate Dedupe · Activity**<br>
-Crateful is free, made by one DJ. Tip **£5 or more** and you get the PRO tools as a thank-you, for good.
+Crateful is free, made by one DJ. Tip **£5 or more** and you get the PRO tools as a thank-you.
 
 <a href="https://buymeacoffee.com/seancreaney"><img alt="Buy me a beer (£5+)" src="https://img.shields.io/badge/Buy%20me%20a%20beer%20(%C2%A35%2B)-ffb020?style=for-the-badge&logo=buymeacoffee&logoColor=black"></a>
 
@@ -303,7 +303,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 *Post it in [Discussions](https://github.com/SeanCreaney/crateful/discussions): others can see it and add to it. For anything private (like your supporter code), email dev.crateful@gmail.com. Crateful is made by one DJ in their spare time, so thanks for your patience.*
 
 **What's free and what's PRO?**<br>
-*Crate Sort, Crate Split, Crate Rate and Crate Stats' overview are free, with no limits. Crate Find, Crate Move, Crate Dedupe and Crate Stats → Activity are PRO: tip £5 or more and you get them as a thank-you, for good. Every 3rd session, free users see a short note about PRO; supporters never do.*
+*Crate Sort, Crate Split, Crate Rate and Crate Stats' overview are free, with no limits. Crate Find, Crate Move, Crate Dedupe and Crate Stats → Activity are PRO: tip £5 or more and you get them as a thank-you. Every 3rd session, free users see a short note about PRO; supporters never do.*
 
 **How does the supporter code work?**<br>
 *Tip £5 or more in one go on [Buy Me a Coffee](https://buymeacoffee.com/seancreaney) and your code is emailed to you within a few minutes. Paste it into any PRO tool's **Already have a code?** box. Each code is single-use: it unlocks Crateful on one Mac. Questions: dev.crateful@gmail.com.*
