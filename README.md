@@ -75,17 +75,8 @@ Tracks sorted and rated, duplicates cleared, your real pace, and **the time you'
 
 ![Crate Stats: tracks sorted and rated, your pace and the time you've saved](docs/screenshots/crate-stats.png)
 
-### Activity <sup>PRO</sup>
+With PRO, **Activity** shows everything you've done in every tool ([see below](#activity-pro)).
 
-**Everything you've done in every tool**, with Undo where it's safe.
-
-- Step through any **week, month or year**. Each bar is split by tool, and hovering over it shows that day's figures.
-- **Look up a track** to see its full history: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved.
-- **Your week** and **Your month** pop up at 9am on a Monday and on the 1st of the month. You can choose weekly, every two weeks or monthly, or turn them off, in Preferences.
-
-![Activity: week, month and year, a day's figures, and one track's history](docs/screenshots/activity.gif)
-
-<p align="center"><img src="docs/screenshots/recap-month.png" width="380" alt="Your month in Crateful"></p>
 
 ---
 
@@ -184,6 +175,18 @@ Your **Same track** and **Incorrect** choices always win over all of the above.
 - **Crateful deletes nothing**: the copies to get rid of go into one playlist, `DupedTracksToDelete.m3u8`, to remove in rekordbox. Changed your mind? Undo any choice from **Crate Stats → Activity**.
 
 ![Crate Dedupe: hear each copy, keep the suggested FLAC, next](docs/screenshots/crate-dedupe.gif)
+
+## Activity <sup>PRO</sup>
+
+**Everything you've done in every tool**, with Undo where it's safe.
+
+- Step through any **week, month or year**. Each bar is split by tool, and hovering over it shows that day's figures.
+- **Look up a track** to see its full history: sorted, rated (each session's rating), found, kept in Crate Dedupe, moved.
+- **Your week** and **Your month** pop up at 9am on a Monday and on the 1st of the month. You can choose weekly, every two weeks or monthly, or turn them off, in Preferences.
+
+![Activity: week, month and year, a day's figures, and one track's history](docs/screenshots/activity.gif)
+
+<p align="center"><img src="docs/screenshots/recap-month.png" width="380" alt="Your month in Crateful"></p>
 
 ---
 
