@@ -4,7 +4,7 @@
 
 **Sort your rekordbox playlists at the speed you listen.**<br>
 Hear a track, press a key, next. Put a track into several playlists in one press.<br>
-Free to sort, split and rate. **PRO** finds what you already own, gathers playlists into folders, clears out duplicates and tells any track's full history.
+Free to sort, split and rate. **PRO** finds what you already own, gathers playlists into folders, clears out duplicates and shows any track's full history.
 
 ![macOS app](https://img.shields.io/badge/macOS-app-000000?logo=apple&logoColor=white)
 ![Apple Silicon and Intel](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-555555)
