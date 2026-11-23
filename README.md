@@ -52,7 +52,7 @@ Drop a `.m3u8` export and sort every track with your keys: **1–9 and 0** for y
 - **Quick** (the default): one key per track and straight on to the next. Make a **combo** once (say **4 = Club + Peak Time**) and every press of 4 puts the track in both.
 - **Manual**: press **1** and **3**, they light up, press **Enter**. Any mix of playlists, no setting up.
 
-A **master playlist** collects every track you keep, **↺ Previously used** brings back playlists from your other sessions, and **Finish** writes everything into `for_importing/`, ready for rekordbox.
+A **master playlist** collects every track you keep, **↺ Previously used** brings back playlists from your other sessions, and **Finish** writes everything into `for_importing/`, ready for rekordbox. **Pick a Crateful playlist** starts a session from one Crateful already made (a split, or a playlist from another session) without hunting for the file.
 
 ![Crate Sort: one key per track, and combo 4 putting a track into Club and Peak Time](docs/screenshots/crate-sort.gif)
 
@@ -64,7 +64,7 @@ Drop a rekordbox `.txt` export and get **one playlist per BPM**, e.g. `2026-10 D
 
 ## Crate Rate
 
-**1–5 stars** plus your own **tags** (e.g. *Dreamy Vocals*, *Rolling Bassline*), then **Enter** to save and move on. A **tempo fader** (±6 / 10 / 16 / WIDE) with master tempo lets you hear how a track holds up sped up, and **[ ]** jumps to the next whole BPM.
+Drop a playlist, or use **Pick a Crateful playlist** to rate one you've sorted. **1–5 stars** plus your own **tags** (e.g. *Dreamy Vocals*, *Rolling Bassline*), then **Enter** to save and move on. A **tempo fader** (±6 / 10 / 16 / WIDE) with master tempo lets you hear how a track holds up sped up, and **[ ]** jumps to the next whole BPM.
 
 ![Crate Rate: stars, a tag, the tempo fader, next](docs/screenshots/crate-rate.gif)
 
@@ -272,6 +272,20 @@ Drag the `.m3u8` files from a session's `for_importing/` folder into rekordbox (
 
 **Duplicates:** import `crate_dedupe/for_importing/DupedTracksToDelete.m3u8`, select all its tracks and choose **Remove from Collection**. The copies you kept stay, with their cues and playlists. Removing from the collection doesn't delete the files from your drive.
 
+## Where things are saved
+
+Everything lives in one folder, `~/Music/crateful`, with a folder per tool (`crate_sort`, `crate_split`, `crate_rate`, `crate_find`, `crate_move`, `crate_dedupe`). Each session has its own folder, named with the date:
+
+```
+crate_sort/sessions/2026_11_03--Downloaded_Tracks/
+├── for_importing/      ← drag these into rekordbox when you finish
+├── your_playlists/     ← your playlists, filled in as you sort (your_ratings/ in Crate Rate)
+├── basics/             ← Trash, Mixed and Pending Decision
+└── rekordbox_export/   ← the playlist you started from
+```
+
+Crateful's own working files sit in hidden `.crateful` folders, so you never need to touch them. Updating from 1.x tidies an older folder into this layout once, after making a backup.
+
 ## Settings
 
 Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
@@ -321,7 +335,7 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 *Yes. Crateful plays each track from wherever the playlist says it is. Just have the drive plugged in while you sort.*
 
 **How do I update?**<br>
-*When there's a new version, a note appears in the sidebar. Download it and drag the new Crateful into Applications. Your sessions and your PRO unlock aren't touched.*
+*When there's a new version, a note appears in the sidebar. Download it and drag the new Crateful into Applications. Your sessions and your PRO unlock are kept (2.0 tidies your folder's names the first time it opens, after a backup).*
 
 **Which audio formats play?**<br>
 *MP3, WAV, AIFF, FLAC and M4A/AAC. Video files in a playlist are left out and listed in `~/Music/crateful/unplayable_tracks/`.*
