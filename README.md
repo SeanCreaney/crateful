@@ -307,7 +307,7 @@ Crateful's own working files sit in hidden `.crateful` folders, so you never nee
 Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 
 - **Music folder:** where your sessions, splits and ratings are saved (`~/Music/crateful` to start with).
-- **Start each track:** from the top, or partway in (say 30%) to skip long intros.
+- **Where each track starts playing:** at the start, or further in (say 30%) to skip long intros.
 - **Collection .xml:** the rekordbox collection Crate Find and Crate Dedupe use, a reminder to export a fresh one, and **Backups** of every one you've given it.
 - **Preferred file type:** which copy Crate Find and Crate Dedupe pick first.
 - **Your recap** <sup>PRO</sup>: weekly, every two weeks, monthly or off.
