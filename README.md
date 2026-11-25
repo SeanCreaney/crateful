@@ -161,7 +161,8 @@ Your **Same track** and **Incorrect** choices always win over all of the above.
 - **Move or copy**, into `crateful/crate_move/<name>` or a folder you choose.
 - A track in **more than one playlist** is moved once, never copied twice.
 - **Nothing is ever overwritten**: a different file with the same name goes into a `Duplicates` folder. Moves to another drive are copied and checked before the original is removed.
-- Run it again later and **only the new tracks move**. **Put back** undoes any move.
+- Run it again later and **only the new tracks move**. **Put back** undoes any move, each track back to its own folder. If a track can't go home yet (say its drive isn't plugged in), press Put back again later for the rest.
+- Every move is listed in `crate_move/your_moves.csv`, to open in Numbers or Excel: what moved, where to, when, and whether it was put back.
 - After a newer collection `.xml`, Crate Move shows how many moved tracks rekordbox has found again.
 
 ![Crate Move: a playlist's files gathered into one folder](docs/screenshots/crate-move.gif)
@@ -284,7 +285,15 @@ Drag the `.m3u8` files from a session's `for_importing/` folder into rekordbox (
 
 **Crate Find:** import `<name>_owned.m3u8` from the find's folder (**Show in Finder** on its results).
 
-**Crate Move:** after a move (not a copy), rekordbox still points at the old places. In rekordbox choose **File → Display All Missing Files**, select them, then **Relocate** and pick the new folder. Relocating keeps your cues, beat grids and playlists. Crate Move shows these steps when it's done.
+**Crate Move:** after a move (not a copy), rekordbox still points at the old places, so relocate them:
+
+1. In rekordbox: **File → Display All Missing Files**.
+2. Select them all and click **Relocate**.
+3. rekordbox names the track it's looking for at the top of its window: find that one in its folder and choose it.
+4. When it asks to use that location for the other missing files, click **Yes**.
+5. Still some missing? Do steps 2 to 4 again until none are left.
+
+Relocate is the only way that keeps your cues, beat grids and playlists: rekordbox keeps those in its own library, not in the music files, so removing the tracks and adding them again would lose them. On a big playlist, rekordbox can take a while. Crate Move shows these steps when it's done.
 
 **Duplicates:** import `crate_dedupe/for_importing/DupedTracksToDelete.m3u8`, select all its tracks and choose **Remove from Collection**. The copies you kept stay, with their cues and playlists. Removing from the collection doesn't delete the files from your drive.
 
@@ -300,7 +309,9 @@ crate_sort/sessions/2026_11_03--Downloaded_Tracks/
 └── rekordbox_export/   ← the playlist you started from
 ```
 
-Crateful's own working files sit in hidden `.crateful` folders, so you never need to touch them. Updating from 1.x tidies an older folder into this layout once, after making a backup.
+**Nothing is erased.** Delete a session, a split or a context playlist and it moves, as it is, into that tool's deleted folder (`deleted_sort_sessions`, `deleted_rate_sessions`, `deleted_split_sessions`, `deleted_context`). **Undo** on the note that appears puts it straight back; later, drag it back into place. Clear the deleted folders out whenever you like: Crate Stats keeps counting the work either way.
+
+Crateful's own working files sit in hidden `.crateful` folders, so you never need to touch them. Updating from an older version tidies your folder into this layout once, after making a backup.
 
 ## Settings
 
@@ -338,6 +349,9 @@ Open **Crateful → Preferences…** in the menu bar (or press ⌘,):
 
 **Do I need rekordbox?**<br>
 *Not for Crate Sort, Crate Rate or Crate Move: they work with any `.m3u8` playlist. Crate Split, Crate Find and Crate Dedupe need rekordbox's exports (the `.txt` for BPMs, the collection `.xml` for Find and Dedupe).*
+
+**I deleted a session by mistake. Is it gone?**<br>
+*No. Press **Undo** on the note that appears, or later drag it from `deleted_sort_sessions` (or `deleted_rate_sessions`) back into `sessions`. Crateful never erases anything on your Mac.*
 
 **Does Crate Dedupe delete my duplicates?**<br>
 *No. The copies you don't keep go into one playlist, `DupedTracksToDelete.m3u8`, and you remove them in rekordbox yourself.*
